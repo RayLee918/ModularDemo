@@ -1,0 +1,130 @@
+//
+//  PrefixHeader.pch
+//  ModularDemo
+//
+//  Created by ZeroHour on 2018/3/1.
+//  Copyright © 2018年 hbweipai. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+// ------------------- 引入的第三方框架 -------------------
+#pragma mark - 用到的头文件
+#import "CLTool.h"                      // 自己的工具类
+#import "AFNetworking.h"                // 网络请求库
+#import "MBProgressHUD.h"               // 提示视图
+#import "MBProgressHUD+Ali.h"
+#import "LCLAPI.h"                      // API接口类
+#import "GlobalSingleton.h"             // 更改主题类
+//#import <UIKit/UIKit.h>
+//#import "MJCSegmentInterface.h"         // 切换控制器
+//#import "SDCycleScrollView.h"           // 轮播图
+//#import "CCCycleScrollView.h"
+//#import "Person.h"                      // 用户信息类
+//#import "UIImageView+AFNetworking.h"    // 图片加载
+//#import <MJRefresh.h>                   // 上提加载, 下拉刷新
+//#import "JPUSHService.h"                // 极光推送
+//#import <UMSocialCore/UMSocialCore.h>   // 友盟分享
+//#import <AlipaySDK/AlipaySDK.h>         // 支付宝支付
+//#import "WXApi.h"                       // 微信支付
+////#import "ClearCacheTool.h"              // 清除缓存
+//#import "BLImagePickerViewController.h" // 图片选择
+//#import "SVProgressHUD.h"
+//#import "UIImage+Color.h"               // 图片旋转
+//#import "UIImage+Rotate.h"
+//#import "UIImage+SubImage.h"
+//#import "UIImage+Gif.h"
+
+#pragma mark - 未用到的头文件
+//#import "UMSocialQQHandler.h"
+//#import <UShareUI/UShareUI.h>
+
+// ------------------- 尺寸 -------------------
+// 屏幕尺寸
+#define kScreenRect [[UIScreen mainScreen] bounds]
+
+// 屏幕宽度
+#define kScreenWidth kScreenRect.size.width
+
+// 屏幕高度
+#define kScreenHeight kScreenRect.size.height
+
+// 状态栏高度
+#define kBatteryHeight 20
+
+// 导航栏高度
+#define kNavgationBarHeight 44
+
+// 标签按钮高度
+#define kTabbarHeight 49
+
+// 图片
+#define kImageNamed(imageName) [UIImage imageNamed:imageName]
+
+// ------------------- 颜色 -------------------
+#define kClearColor [UIColor clearColor]
+#define kWhiteColor [UIColor whiteColor]
+#define kBlackColor [UIColor blackColor]
+#define kRedColor [UIColor redColor]
+#define kOrangeColor [UIColor orangeColor]
+#define kYellowColor [UIColor yellowColor]
+#define kGreenColor [UIColor greenColor]
+#define kCyanColor [UIColor cyanColor]
+#define kBlueColor [UIColor blueColor]
+#define kPurpleColor [UIColor purpleColor]
+
+// 16进制颜色转换
+#define kColor(s) [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
+
+// 背景颜色
+#define kBackgroundColor [UIColor colorWithRed:240/255.0 green:244/255.0 blue:246/255.0 alpha:1]
+
+#define kGlobalColor [UIColor colorWithRed:190/255.0 green:1/255.0 blue:14/255.0 alpha:1]
+
+// 分割线颜色
+#define kLineColor [UIColor colorWithRed:(((0xEFEFEF & 0xFF0000) >> 16))/255.0 green:(((0xEFEFEF &0xFF00) >>8))/255.0 blue:((0xEFEFEF &0xFF))/255.0 alpha:1.0]
+
+// 字体颜色
+#define kTextColor [UIColor colorWithRed:(((0x1F1F1F & 0xFF0000) >> 16))/255.0 green:(((0x1F1F1F &0xFF00) >>8))/255.0 blue:((0x1F1F1F &0xFF))/255.0 alpha:1.0]
+
+// 该项目的域名
+//#define kUrl @"http://18v807603p.iok.la:28978/xy/"
+#define kUrl @"http://192.168.1.131:8080/jgt/"
+
+#define DEVICE_IS_IPHONE4s ([[UIScreen mainScreen] bounds].size.height == 480)
+
+// 关键字
+#define kData @"data"
+#define kStatus @"status"
+#define kMsg @"msg"
+
+// 登录
+#define kUShareAppkey @"5a4f2a97b27b0a05c0000178"               // 已经更改
+#define kAppKeyQQ @"1106642354"                                 // 已经更改
+#define kAppKeyWeiXin @"wxcae1a22bc60e91de"                     // 已经更改
+#define kAppSecretWeiXin @"0f4390813ad2ee84bc517559f682060f"    // 已经更改
+#define kAppKeyJPush @"53e61a54f09ea90b49e3b485"                // 已经更改
+#define kAppSecretJPush @"5324447bcae680e009b21e1b"             // 已经更改
+
+// 支付
+#define kAlipayAppID @"2018010601638202"                        // 已经更改
+#define kAlipayPrivateKey                                            @"MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCZHQrXCQCnIeK8H0r73htJ23rEHR4NNydlvH/FaD50+4873d9A0P1xU5dN5IgiyDfKS7HzZL0xCFcpNZYco0MBW6BuilsRXa658VSJH5tNQ+WwaVg+G27ImN6iTEZw7Nscrqo4YMT+AUOSnHnG531GWzraALH4a4LhIxb3LBaR4K2E7t8Ziq455qVuJbTjmf/MSHuSXHWX4yUALRWpSSKUitEm4X5fPJ9yrml6muuVtRkoLISzr4o5FjJ77zP9dQ1wKX87pIt7SvCX4Xz2pT7H4jRmaQ9tlWfyNpWgWG1CfTLJ+DYnoEDzOSTCrfaYIGwarh5ih5AMVG4pzF9ljxr9AgMBAAECggEBAIqwbtg29FtvazRh2Abquacd4kbv5P+tfMc/hjDm6uQF1UkyAP5yD4/uWrgYkGOJHlfkVs0T6/cVCfZu7okELTZ2q4xVUIYbaKBPA/atJXxISy6PTXn8WU3kgo1aL9gsA5EoeVFV/jniJTYQ/JF5r9Th4B4F0S8nG0cZBL1hNxRsmz55/GIKrzx7T38VQiGqJJfCEgydMrOWdr829rK0cfB2xlg4cDQPrjS0ztlfvP6Wuk+FiLzjqApx1vyU8bTT1IWVF0rvL0RQrp5+V1kWeil7IgdKzIgwVF19TvicdiTyic6fu3Wa3z4KXTMiK6EZBDhii09lxNNCL5Ry8N7tGFUCgYEA0E92OomKFUYpEV3PE19ZtB/5+Bo9Vn41c0P3W1t9RI+hMIVIAoDYP+YhCjxMf8HwnkiK1PeUY35f9YIih97ZrAablFd3Vxsi5YdxJ2OX2yyKQmAsMEg1ATIQ11AZZrdTPHbAvzWQ8lmU23jbWQr9nt9inu5ENmpNPMq2ssiMWrsCgYEAvCqg9v/LL8MZGgLau7lEabJgMgerRlcYf9HpT76ipEsJ4ZBXkPRWsWgDRaTWLPEQLCuWYwBkWv3SnvG34F/fovAvubzmqjuUFDo3zq71e+3g1VTw1LtCvOoDnNlkqDT9VW5fyAf2F8E6OHRpL4fqQ5tN0/GlsdFvUDhPJjQUkacCgYEAqJXWmjNbtDHu5KYmA4ikgXlrhRY/U/OacGmuE5qse8M98ZW8HIKIANbPIIiCZNbhVEhjS03/IrJRGNEz/wAk6+sBGIHdDHriuB3wPq+EY5XdYzCQMpcNhqUtKgQiOpXdYE6/WUARyYEkTqa15o9ViLFDEFrGi79mOO/aAkD6DicCgYEAl8Kl6jCqNs5am3D763XkKH9WOGOZDvVF7ClnzApL8MgYoxUgmueGWDU0lmH432xZh9Zrx1NUnVKkIc+AZvXMUAT56Qri2x+MMbg2tHrFwPs9X7HPPzP9ApKW8VUgas26GMIZfCJ3p/cPNuMkxtIO7hH+9laqNb1d0sxngb91a3cCgYBjvgxEYjdrjRhYkSmypLZ3h6QBLezc6jbs8G4fqfKAJqGkgYr/dam5edicBM9COIl/24jnA0aTaf2k30UfqBFRqval6prLwIzhPx3zAKZDFWfR5tuDYmH3ydslLJB4lhibYvhu58Ie3iYDyo9pbxjCgEkt8wm50jAQZNhEtX+LlQ=="        // 已经更改
+
+// 用到的key
+// 跳转模块 -> 任务列表
+#define kGoToTaskViewController @"GoToTaskViewController"
+
+// 跳转模块 -> 积分商城
+#define kGoToStoreViewController @"GoToStoreViewController"
+
+// 刷新个人信息
+#define kNotificationRefreshUserInfo @"resresh_person_info"
+#define kToken @"token"     // 项目token
+
+

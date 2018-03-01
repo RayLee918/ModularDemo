@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1451A478EFA8328C49792949 /* libPods-ModularDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E9341EC873D846FB584902 /* libPods-ModularDemo.a */; };
+		3B7318292047B2CB007E8D80 /* LCLRegisterViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318282047B2CB007E8D80 /* LCLRegisterViewController2.m */; };
+		3B73182D2047C188007E8D80 /* LCLLoginViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73182C2047C188007E8D80 /* LCLLoginViewController1.m */; };
+		3B7318302047C194007E8D80 /* LCLLoginViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73182F2047C194007E8D80 /* LCLLoginViewController2.m */; };
+		3B7318332047C2E2007E8D80 /* LCLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318322047C2E2007E8D80 /* LCLLoginViewController.m */; };
+		3B7318362047D011007E8D80 /* LCLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318352047D011007E8D80 /* LCLSettingViewController.m */; };
+		3B7318392047D0C2007E8D80 /* GlobalSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318382047D0C2007E8D80 /* GlobalSingleton.m */; };
+		3B73185F2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73185E2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m */; };
+		3B7318622047DD52007E8D80 /* HRSampleColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318602047DD52007E8D80 /* HRSampleColorPickerViewController.m */; };
+		3B7318E72047E76A007E8D80 /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318D72047E76A007E8D80 /* HRHSVColorUtil.m */; };
+		3B7318E82047E76A007E8D80 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318D92047E76A007E8D80 /* HRColorPickerView.m */; };
+		3B7318E92047E76A007E8D80 /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318DB2047E76A007E8D80 /* HRBrightnessCursor.m */; };
+		3B7318EA2047E76A007E8D80 /* HRColorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318DC2047E76A007E8D80 /* HRColorInfoView.m */; };
+		3B7318EB2047E76A007E8D80 /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318DD2047E76A007E8D80 /* HRColorCursor.m */; };
+		3B7318EC2047E76A007E8D80 /* HRColorMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318DE2047E76A007E8D80 /* HRColorMapView.m */; };
+		3B7318ED2047E76A007E8D80 /* HRBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318E02047E76A007E8D80 /* HRBrightnessSlider.m */; };
+		3B7318EE2047E76A007E8D80 /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318E32047E76A007E8D80 /* UIImage+CoreGraphics.m */; };
+		3B7318EF2047E76A007E8D80 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B7318E52047E76A007E8D80 /* Info.plist */; };
+		3BBB94E920478C1200D008CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94E820478C1200D008CE /* AppDelegate.m */; };
+		3BBB94EC20478C1200D008CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94EB20478C1200D008CE /* ViewController.m */; };
+		3BBB94EF20478C1200D008CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB94ED20478C1200D008CE /* Main.storyboard */; };
+		3BBB94F120478C1200D008CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB94F020478C1200D008CE /* Assets.xcassets */; };
+		3BBB94F420478C1200D008CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB94F220478C1200D008CE /* LaunchScreen.storyboard */; };
+		3BBB94F720478C1200D008CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94F620478C1200D008CE /* main.m */; };
+		3BBB95052047915100D008CE /* LCLRegisterViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB95032047915100D008CE /* LCLRegisterViewController1.m */; };
+		3BBB9507204792DA00D008CE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB9506204792DA00D008CE /* Podfile */; };
+		3BBB9517204794EA00D008CE /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB9515204794EA00D008CE /* Resource.bundle */; };
+		3BBB9518204794EA00D008CE /* MBProgressHUD+Ali.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB9516204794EA00D008CE /* MBProgressHUD+Ali.m */; };
+		3BBB951B2047985800D008CE /* LCLAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB951A2047985800D008CE /* LCLAPI.m */; };
+		3BBB95222047A4D100D008CE /* LCLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB95212047A4D100D008CE /* LCLRegisterViewController.m */; };
+		3BBB95252047ACEC00D008CE /* CLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB95232047ACEC00D008CE /* CLTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23E9341EC873D846FB584902 /* libPods-ModularDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModularDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7318272047B2CB007E8D80 /* LCLRegisterViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController2.h; sourceTree = "<group>"; };
+		3B7318282047B2CB007E8D80 /* LCLRegisterViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController2.m; sourceTree = "<group>"; };
+		3B73182B2047C188007E8D80 /* LCLLoginViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLLoginViewController1.h; sourceTree = "<group>"; };
+		3B73182C2047C188007E8D80 /* LCLLoginViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLLoginViewController1.m; sourceTree = "<group>"; };
+		3B73182E2047C194007E8D80 /* LCLLoginViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLLoginViewController2.h; sourceTree = "<group>"; };
+		3B73182F2047C194007E8D80 /* LCLLoginViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLLoginViewController2.m; sourceTree = "<group>"; };
+		3B7318312047C2E2007E8D80 /* LCLLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLLoginViewController.h; sourceTree = "<group>"; };
+		3B7318322047C2E2007E8D80 /* LCLLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLLoginViewController.m; sourceTree = "<group>"; };
+		3B7318342047D011007E8D80 /* LCLSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLSettingViewController.h; sourceTree = "<group>"; };
+		3B7318352047D011007E8D80 /* LCLSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLSettingViewController.m; sourceTree = "<group>"; };
+		3B7318372047D0C2007E8D80 /* GlobalSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSingleton.h; sourceTree = "<group>"; };
+		3B7318382047D0C2007E8D80 /* GlobalSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSingleton.m; sourceTree = "<group>"; };
+		3B73185D2047DCBC007E8D80 /* HRSampleColorPickerViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRSampleColorPickerViewController2.h; sourceTree = "<group>"; };
+		3B73185E2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRSampleColorPickerViewController2.m; sourceTree = "<group>"; };
+		3B7318602047DD52007E8D80 /* HRSampleColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRSampleColorPickerViewController.m; sourceTree = "<group>"; };
+		3B7318612047DD52007E8D80 /* HRSampleColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRSampleColorPickerViewController.h; sourceTree = "<group>"; };
+		3B7318D52047E76A007E8D80 /* HRColorMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorMapView.h; sourceTree = "<group>"; };
+		3B7318D62047E76A007E8D80 /* HRColorCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorCursor.h; sourceTree = "<group>"; };
+		3B7318D72047E76A007E8D80 /* HRHSVColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRHSVColorUtil.m; sourceTree = "<group>"; };
+		3B7318D82047E76A007E8D80 /* HRBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRBrightnessSlider.h; sourceTree = "<group>"; };
+		3B7318D92047E76A007E8D80 /* HRColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorPickerView.m; sourceTree = "<group>"; };
+		3B7318DA2047E76A007E8D80 /* UIImage+CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CoreGraphics.h"; sourceTree = "<group>"; };
+		3B7318DB2047E76A007E8D80 /* HRBrightnessCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRBrightnessCursor.m; sourceTree = "<group>"; };
+		3B7318DC2047E76A007E8D80 /* HRColorInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorInfoView.m; sourceTree = "<group>"; };
+		3B7318DD2047E76A007E8D80 /* HRColorCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorCursor.m; sourceTree = "<group>"; };
+		3B7318DE2047E76A007E8D80 /* HRColorMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorMapView.m; sourceTree = "<group>"; };
+		3B7318DF2047E76A007E8D80 /* HRColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPicker.h; sourceTree = "<group>"; };
+		3B7318E02047E76A007E8D80 /* HRBrightnessSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRBrightnessSlider.m; sourceTree = "<group>"; };
+		3B7318E12047E76A007E8D80 /* HRHSVColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRHSVColorUtil.h; sourceTree = "<group>"; };
+		3B7318E22047E76A007E8D80 /* HRBrightnessCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRBrightnessCursor.h; sourceTree = "<group>"; };
+		3B7318E32047E76A007E8D80 /* UIImage+CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CoreGraphics.m"; sourceTree = "<group>"; };
+		3B7318E42047E76A007E8D80 /* HRColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPickerView.h; sourceTree = "<group>"; };
+		3B7318E52047E76A007E8D80 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7318E62047E76A007E8D80 /* HRColorInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorInfoView.h; sourceTree = "<group>"; };
+		3BBB94E420478C1200D008CE /* ModularDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBB94E720478C1200D008CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3BBB94E820478C1200D008CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3BBB94EA20478C1200D008CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3BBB94EB20478C1200D008CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3BBB94EE20478C1200D008CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BBB94F020478C1200D008CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BBB94F320478C1200D008CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BBB94F520478C1200D008CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BBB94F620478C1200D008CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BBB95022047911100D008CE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3BBB95032047915100D008CE /* LCLRegisterViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController1.m; sourceTree = "<group>"; };
+		3BBB95042047915100D008CE /* LCLRegisterViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController1.h; sourceTree = "<group>"; };
+		3BBB9506204792DA00D008CE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3BBB9514204794EA00D008CE /* MBProgressHUD+Ali.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Ali.h"; sourceTree = "<group>"; };
+		3BBB9515204794EA00D008CE /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		3BBB9516204794EA00D008CE /* MBProgressHUD+Ali.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Ali.m"; sourceTree = "<group>"; };
+		3BBB95192047985800D008CE /* LCLAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLAPI.h; sourceTree = "<group>"; };
+		3BBB951A2047985800D008CE /* LCLAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLAPI.m; sourceTree = "<group>"; };
+		3BBB95202047A4D100D008CE /* LCLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController.h; sourceTree = "<group>"; };
+		3BBB95212047A4D100D008CE /* LCLRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController.m; sourceTree = "<group>"; };
+		3BBB95232047ACEC00D008CE /* CLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTool.m; sourceTree = "<group>"; };
+		3BBB95242047ACEC00D008CE /* CLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTool.h; sourceTree = "<group>"; };
+		9BBEC45BBF6F8002E7DB42C7 /* Pods-ModularDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModularDemo/Pods-ModularDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DA8383C6E83956CD8CA8FFF5 /* Pods-ModularDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModularDemo/Pods-ModularDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BBB94E120478C1200D008CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1451A478EFA8328C49792949 /* libPods-ModularDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33D7B165645D03313CDB368B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23E9341EC873D846FB584902 /* libPods-ModularDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B73182A2047C15E007E8D80 /* 登录页面 */ = {
+			isa = PBXGroup;
+			children = (
+				3B7318312047C2E2007E8D80 /* LCLLoginViewController.h */,
+				3B7318322047C2E2007E8D80 /* LCLLoginViewController.m */,
+				3B73182B2047C188007E8D80 /* LCLLoginViewController1.h */,
+				3B73182C2047C188007E8D80 /* LCLLoginViewController1.m */,
+				3B73182E2047C194007E8D80 /* LCLLoginViewController2.h */,
+				3B73182F2047C194007E8D80 /* LCLLoginViewController2.m */,
+			);
+			path = "登录页面";
+			sourceTree = "<group>";
+		};
+		3B7318D42047E76A007E8D80 /* HRColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				3B7318D52047E76A007E8D80 /* HRColorMapView.h */,
+				3B7318D62047E76A007E8D80 /* HRColorCursor.h */,
+				3B7318D72047E76A007E8D80 /* HRHSVColorUtil.m */,
+				3B7318D82047E76A007E8D80 /* HRBrightnessSlider.h */,
+				3B7318D92047E76A007E8D80 /* HRColorPickerView.m */,
+				3B7318DA2047E76A007E8D80 /* UIImage+CoreGraphics.h */,
+				3B7318DB2047E76A007E8D80 /* HRBrightnessCursor.m */,
+				3B7318DC2047E76A007E8D80 /* HRColorInfoView.m */,
+				3B7318DD2047E76A007E8D80 /* HRColorCursor.m */,
+				3B7318DE2047E76A007E8D80 /* HRColorMapView.m */,
+				3B7318DF2047E76A007E8D80 /* HRColorPicker.h */,
+				3B7318E02047E76A007E8D80 /* HRBrightnessSlider.m */,
+				3B7318E12047E76A007E8D80 /* HRHSVColorUtil.h */,
+				3B7318E22047E76A007E8D80 /* HRBrightnessCursor.h */,
+				3B7318E32047E76A007E8D80 /* UIImage+CoreGraphics.m */,
+				3B7318E42047E76A007E8D80 /* HRColorPickerView.h */,
+				3B7318E52047E76A007E8D80 /* Info.plist */,
+				3B7318E62047E76A007E8D80 /* HRColorInfoView.h */,
+			);
+			path = HRColorPicker;
+			sourceTree = "<group>";
+		};
+		3BBB94DB20478C1200D008CE = {
+			isa = PBXGroup;
+			children = (
+				3BBB94F020478C1200D008CE /* Assets.xcassets */,
+				3BBB95022047911100D008CE /* PrefixHeader.pch */,
+				3B7318372047D0C2007E8D80 /* GlobalSingleton.h */,
+				3B7318382047D0C2007E8D80 /* GlobalSingleton.m */,
+				3B7318D42047E76A007E8D80 /* HRColorPicker */,
+				3BBB94E620478C1200D008CE /* ModularDemo */,
+				3BBB94E520478C1200D008CE /* Products */,
+				87DC351569C39C9498B39E5E /* Pods */,
+				33D7B165645D03313CDB368B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BBB94E520478C1200D008CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB94E420478C1200D008CE /* ModularDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BBB94E620478C1200D008CE /* ModularDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB9506204792DA00D008CE /* Podfile */,
+				3BBB94E720478C1200D008CE /* AppDelegate.h */,
+				3BBB94E820478C1200D008CE /* AppDelegate.m */,
+				3BBB94EA20478C1200D008CE /* ViewController.h */,
+				3BBB94EB20478C1200D008CE /* ViewController.m */,
+				3B7318612047DD52007E8D80 /* HRSampleColorPickerViewController.h */,
+				3B7318602047DD52007E8D80 /* HRSampleColorPickerViewController.m */,
+				3B73185D2047DCBC007E8D80 /* HRSampleColorPickerViewController2.h */,
+				3B73185E2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m */,
+				3B7318342047D011007E8D80 /* LCLSettingViewController.h */,
+				3B7318352047D011007E8D80 /* LCLSettingViewController.m */,
+				3BBB951C20479B3900D008CE /* Class */,
+				3BBB94ED20478C1200D008CE /* Main.storyboard */,
+				3BBB94F220478C1200D008CE /* LaunchScreen.storyboard */,
+				3BBB94F520478C1200D008CE /* Info.plist */,
+				3BBB94F620478C1200D008CE /* main.m */,
+				3BBB9513204794EA00D008CE /* MBProgressHUD+Ali */,
+			);
+			path = ModularDemo;
+			sourceTree = "<group>";
+		};
+		3BBB9513204794EA00D008CE /* MBProgressHUD+Ali */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB9514204794EA00D008CE /* MBProgressHUD+Ali.h */,
+				3BBB9515204794EA00D008CE /* Resource.bundle */,
+				3BBB9516204794EA00D008CE /* MBProgressHUD+Ali.m */,
+			);
+			path = "MBProgressHUD+Ali";
+			sourceTree = "<group>";
+		};
+		3BBB951C20479B3900D008CE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB951D20479B5900D008CE /* Config */,
+				3B73182A2047C15E007E8D80 /* 登录页面 */,
+				3BBB951F2047A4BA00D008CE /* 注册页面 */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		3BBB951D20479B5900D008CE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB95242047ACEC00D008CE /* CLTool.h */,
+				3BBB95232047ACEC00D008CE /* CLTool.m */,
+				3BBB951E20479B7100D008CE /* 请求的接口 */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		3BBB951E20479B7100D008CE /* 请求的接口 */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB95192047985800D008CE /* LCLAPI.h */,
+				3BBB951A2047985800D008CE /* LCLAPI.m */,
+			);
+			path = "请求的接口";
+			sourceTree = "<group>";
+		};
+		3BBB951F2047A4BA00D008CE /* 注册页面 */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB95202047A4D100D008CE /* LCLRegisterViewController.h */,
+				3BBB95212047A4D100D008CE /* LCLRegisterViewController.m */,
+				3BBB95042047915100D008CE /* LCLRegisterViewController1.h */,
+				3BBB95032047915100D008CE /* LCLRegisterViewController1.m */,
+				3B7318272047B2CB007E8D80 /* LCLRegisterViewController2.h */,
+				3B7318282047B2CB007E8D80 /* LCLRegisterViewController2.m */,
+			);
+			path = "注册页面";
+			sourceTree = "<group>";
+		};
+		87DC351569C39C9498B39E5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA8383C6E83956CD8CA8FFF5 /* Pods-ModularDemo.debug.xcconfig */,
+				9BBEC45BBF6F8002E7DB42C7 /* Pods-ModularDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BBB94E320478C1200D008CE /* ModularDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BBB94FA20478C1200D008CE /* Build configuration list for PBXNativeTarget "ModularDemo" */;
+			buildPhases = (
+				2199403C66E5538F6156CE60 /* [CP] Check Pods Manifest.lock */,
+				3BBB94E020478C1200D008CE /* Sources */,
+				3BBB94E120478C1200D008CE /* Frameworks */,
+				3BBB94E220478C1200D008CE /* Resources */,
+				0719264549997BA58F64D259 /* [CP] Embed Pods Frameworks */,
+				F2BE957D87EF98424852DF51 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModularDemo;
+			productName = ModularDemo;
+			productReference = 3BBB94E420478C1200D008CE /* ModularDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BBB94DC20478C1200D008CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LCL;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = hbweipai;
+				TargetAttributes = {
+					3BBB94E320478C1200D008CE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3BBB94DF20478C1200D008CE /* Build configuration list for PBXProject "ModularDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BBB94DB20478C1200D008CE;
+			productRefGroup = 3BBB94E520478C1200D008CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BBB94E320478C1200D008CE /* ModularDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BBB94E220478C1200D008CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBB94F420478C1200D008CE /* LaunchScreen.storyboard in Resources */,
+				3BBB94F120478C1200D008CE /* Assets.xcassets in Resources */,
+				3B7318EF2047E76A007E8D80 /* Info.plist in Resources */,
+				3BBB9507204792DA00D008CE /* Podfile in Resources */,
+				3BBB94EF20478C1200D008CE /* Main.storyboard in Resources */,
+				3BBB9517204794EA00D008CE /* Resource.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0719264549997BA58F64D259 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModularDemo/Pods-ModularDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2199403C66E5538F6156CE60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModularDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2BE957D87EF98424852DF51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModularDemo/Pods-ModularDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BBB94E020478C1200D008CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBB95252047ACEC00D008CE /* CLTool.m in Sources */,
+				3BBB951B2047985800D008CE /* LCLAPI.m in Sources */,
+				3B73185F2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m in Sources */,
+				3B7318392047D0C2007E8D80 /* GlobalSingleton.m in Sources */,
+				3B7318332047C2E2007E8D80 /* LCLLoginViewController.m in Sources */,
+				3B7318EB2047E76A007E8D80 /* HRColorCursor.m in Sources */,
+				3BBB94EC20478C1200D008CE /* ViewController.m in Sources */,
+				3B7318EE2047E76A007E8D80 /* UIImage+CoreGraphics.m in Sources */,
+				3B7318302047C194007E8D80 /* LCLLoginViewController2.m in Sources */,
+				3BBB94F720478C1200D008CE /* main.m in Sources */,
+				3B7318292047B2CB007E8D80 /* LCLRegisterViewController2.m in Sources */,
+				3B7318622047DD52007E8D80 /* HRSampleColorPickerViewController.m in Sources */,
+				3BBB94E920478C1200D008CE /* AppDelegate.m in Sources */,
+				3B7318E92047E76A007E8D80 /* HRBrightnessCursor.m in Sources */,
+				3B7318EA2047E76A007E8D80 /* HRColorInfoView.m in Sources */,
+				3BBB9518204794EA00D008CE /* MBProgressHUD+Ali.m in Sources */,
+				3B7318ED2047E76A007E8D80 /* HRBrightnessSlider.m in Sources */,
+				3B7318E72047E76A007E8D80 /* HRHSVColorUtil.m in Sources */,
+				3BBB95222047A4D100D008CE /* LCLRegisterViewController.m in Sources */,
+				3B7318EC2047E76A007E8D80 /* HRColorMapView.m in Sources */,
+				3B73182D2047C188007E8D80 /* LCLLoginViewController1.m in Sources */,
+				3B7318362047D011007E8D80 /* LCLSettingViewController.m in Sources */,
+				3B7318E82047E76A007E8D80 /* HRColorPickerView.m in Sources */,
+				3BBB95052047915100D008CE /* LCLRegisterViewController1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BBB94ED20478C1200D008CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BBB94EE20478C1200D008CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BBB94F220478C1200D008CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BBB94F320478C1200D008CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BBB94F820478C1200D008CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3BBB94F920478C1200D008CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BBB94FB20478C1200D008CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8383C6E83956CD8CA8FFF5 /* Pods-ModularDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = ModularDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbweipai.ModularDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BBB94FC20478C1200D008CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BBEC45BBF6F8002E7DB42C7 /* Pods-ModularDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = ModularDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbweipai.ModularDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BBB94DF20478C1200D008CE /* Build configuration list for PBXProject "ModularDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBB94F820478C1200D008CE /* Debug */,
+				3BBB94F920478C1200D008CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BBB94FA20478C1200D008CE /* Build configuration list for PBXNativeTarget "ModularDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBB94FB20478C1200D008CE /* Debug */,
+				3BBB94FC20478C1200D008CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BBB94DC20478C1200D008CE /* Project object */;
+}
