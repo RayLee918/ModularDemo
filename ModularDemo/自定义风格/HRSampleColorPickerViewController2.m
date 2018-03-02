@@ -95,6 +95,7 @@
 - (void)colorDidChange:(HRColorPickerView *)colorPickerView {
     _color = colorPickerView.color;
     self.navigationController.navigationBar.barTintColor = _color;
+    [GlobalSingleton shareInstance].globalColor = _color;
     NSLog(@"%@", _color);
 }
 
@@ -102,10 +103,15 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [CLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kWhiteColor title:@"定制风格"];
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     if (self.delegate) {
-        [self.delegate setSelectedColor:colorPickerView.color];
+        [self.delegate setSelectedColor:_color];
     }
 }
 

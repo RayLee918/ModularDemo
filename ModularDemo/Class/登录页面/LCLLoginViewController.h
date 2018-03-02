@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LCLBaseViewController.h"
 
-@interface LCLLoginViewController : UIViewController
+@interface LCLLoginViewController : LCLBaseViewController
 
 @end

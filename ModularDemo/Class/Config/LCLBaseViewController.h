@@ -1,5 +1,5 @@
 //
-//  LCLSettingViewController.h
+//  LCLBaseViewController.h
 //  ModularDemo
 //
 //  Created by ZeroHour on 2018/3/1.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LCLSettingViewController : UIViewController
-
+@interface LCLBaseViewController : UIViewController
+@property (nonatomic, strong) UIView * firstView;
 @end

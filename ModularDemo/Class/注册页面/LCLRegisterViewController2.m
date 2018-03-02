@@ -9,13 +9,12 @@
 
 @interface LCLRegisterViewController2 () <UITextFieldDelegate>
 {
-    UIScrollView * _loginView;
-    UITextField * _nameTF;
-    UITextField * _codeTF;
-    UITextField * _pwdTF1;
-    UITextField * _pwdTF2;
-    UITextField * _recommendTF;
-    NSString * _inputCode;
+    UIScrollView * _loginView;      // 登录视图
+    UITextField * _nameTF;          // 用户名
+    UITextField * _codeTF;          // 验证码
+    UITextField * _pwdTF1;          // 第一次密码
+    UITextField * _pwdTF2;          // 第二次密码
+    UITextField * _recommendTF;     // 推荐码
     
     NSTimer * _timer;
 }
@@ -26,7 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _inputCode = @"";
     [CLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:[GlobalSingleton shareInstance].globalColor title:@"注册"];
     
     [self initRegisterView];
@@ -135,17 +133,9 @@
                         // 注册请求
                         NSDictionary * param = nil;
                         [[AFHTTPSessionManager manager] GET:[NSString stringWithFormat:@"%@/register/register", kUrl] parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                            NSLog(@"register - %@", responseObject);
+                            
                             if ([[responseObject objectForKey:kStatus] integerValue] == 200) {
-                                UIAlertController * alert = [UIAlertController alertControllerWithTitle:nil message:@"注册成功" preferredStyle:UIAlertControllerStyleAlert];
-                                [alert addAction:[UIAlertAction actionWithTitle:@"去登录" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                                    // 返回登录界面
-                                    dispatch_async(dispatch_get_main_queue(), ^{
-                                        
-                                        [self.navigationController popViewControllerAnimated:YES];
-                                    });
-                                }]];
-                                [self presentViewController:alert animated:YES completion:NULL];
+                                
                             } else {
                                 [CLTool showAlert:[responseObject objectForKey:kMsg] target:self];
                             }
@@ -179,7 +169,6 @@
         [[AFHTTPSessionManager manager] GET:urlStr parameters:@{@"type":@"1", @"phone":_nameTF.text} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             if ([[responseObject objectForKey:kStatus] integerValue] == 200) {
                 
-                _inputCode = [responseObject objectForKey:kData];
                 NSLog(@"inputCode - %@", [responseObject objectForKey:kData]);
             } else {
                 [CLTool showAlert:[responseObject objectForKey:kMsg] target:self];

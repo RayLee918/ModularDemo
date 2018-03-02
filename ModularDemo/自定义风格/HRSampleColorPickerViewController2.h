@@ -26,16 +26,18 @@
  */
 
 #import <UIKit/UIKit.h>
+//#import "HRSampleColorPickerViewController.h"
 
 @protocol HRColorPickerViewControllerDelegate
 - (void)setSelectedColor:(UIColor *)color;
 @end
+@class HRColorPickerView;
 
-@interface HRSampleColorPickerViewController : UIViewController {
-}
-
+@interface HRSampleColorPickerViewController2 : UIViewController
 @property (nonatomic, strong) UIColor* color;
-@property (nonatomic, weak) id <HRColorPickerViewControllerDelegate> delegate;
+
+@property (weak) id <HRColorPickerViewControllerDelegate> delegate;
+
+- (id)initWithColor:(UIColor *)defaultColor fullColor:(BOOL)fullColor;
 
 @end
-

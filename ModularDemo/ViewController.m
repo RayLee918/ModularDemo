@@ -9,15 +9,18 @@
 #import "ViewController.h"
 #import "LCLRegisterViewController.h"   // 注册页面
 #import "LCLLoginViewController.h"      // 登录页面
-#import "LCLSettingViewController.h"    // 用户自定义界面
-#import "HRSampleColorPickerViewController2.h"
+#import "HRSampleColorPickerViewController2.h"  // 自定义风格页面
+#import "LCLControlViewController1.h"   // 控件展示
+#import "LCLControlViewController2.h"   // 控件展示
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource, HRColorPickerViewControllerDelegate>
 {
     UITableView * _tableView;
-    NSArray * _dataSource;
-    NSArray * _titles;
+    NSArray * _dataSource;     // 展示类
+    NSArray * _titles;          // 大标题
+    NSArray * _subTitles;       // 页面展示标题
 }
+@property (nonatomic, strong) UIColor *color;
 @end
 
 @implementation ViewController
@@ -26,6 +29,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // 设置默认颜色
+    [GlobalSingleton shareInstance].globalColor = kBlackColor;
+    
     // 创建视图
     [self initView];
     
@@ -33,20 +39,19 @@
     [self loadNewData];
 }
 
-- (void)changeNav:(NSNotification *)noti {
-    NSLog(@"%s - %@", __func__, noti);
-    //    UINavigationBar * bar = [UINavigationBar appearance];
-    //    bar.barTintColor = kRedColor;
-    //    bar.tintColor = kWhiteColor;
-    //    bar.translucent = NO;
-    //    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:kWhiteColor}];
-    //    [bar setBackgroundImage:[UIImage new]
-    //             forBarPosition:UIBarPositionAny
-    //                 barMetrics:UIBarMetricsDefault];
-    //    [bar setShadowImage:[UIImage new]];
-//    self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
+#pragma mark - 加载数据
+- (void)loadNewData {
+    
+    // 分类标题
+    _titles = @[@"页面展示", @"控件展示"];
+    _subTitles = @[@[@"注册页面", @"登录页面"],
+                   @[@"展示页面1", @"展示页面2"]
+                   ];
+    
+    _dataSource = @[@[[LCLRegisterViewController class], [LCLLoginViewController class]],
+                     @[[LCLControlViewController1 class], [LCLControlViewController2 class]]
+                     ];
 }
-
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -68,39 +73,28 @@
 
 #pragma mark - 用户自定义
 - (void)settingBtnClick {
-//    LCLSettingViewController * vc = [LCLSettingViewController new];
     HRSampleColorPickerViewController2 *controller;
-    controller = [[HRSampleColorPickerViewController2 alloc] initWithColor:kBlackColor fullColor:YES];
+    controller = [[HRSampleColorPickerViewController2 alloc] initWithColor:self.color fullColor:YES];
+    controller.delegate = self;
     [self.navigationController pushViewController:controller
                                          animated:YES];
 }
 
-#pragma mark - 加载数据
-- (void)loadNewData {
-    
-    // 分类标题
-    _titles = @[@"注册页面", @"登录页面"];
-    
-    _dataSource = @[[LCLRegisterViewController class], [LCLLoginViewController class]];
-}
-
-
 #pragma mark - UITableViewDataSource UITableViewDelegate
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView * v = [UIView new];
-    v.frame = CGRectMake(0, 0, kScreenWidth, 0.01);
-    v.backgroundColor = kBackgroundColor;
-    return v;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    UIView * v = [UIView new];
+//    v.frame = CGRectMake(0, 0, kScreenWidth, 0.01);
+//    v.backgroundColor = kBackgroundColor;
+//    return v;
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.01;
+    return 33;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     UIView * v = [UIView new];
     v.frame = CGRectMake(0, 0, kScreenWidth, 0.01);
-    v.backgroundColor = kBackgroundColor;
     return v;
 }
 
@@ -108,8 +102,17 @@
     return 0.01;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return _titles.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSArray * arr = _subTitles[section];
+    return arr.count;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return _titles[section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -119,16 +122,22 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = _titles[indexPath.row];
+    NSArray * arr = _subTitles[indexPath.section];
+    cell.textLabel.text = arr[indexPath.row];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    Class class = _dataSource[indexPath.row];
-    NSLog(@"%s - %@", __func__, class);
+    NSArray * arr = _dataSource[indexPath.section];
+    Class class = arr[indexPath.row];
     [self.navigationController pushViewController:[class new] animated:YES];
+}
+
+- (void)setSelectedColor:(UIColor *)color {
+    NSLog(@"%s", __func__);
+    self.color = color;
 }
 
 - (void)didReceiveMemoryWarning {

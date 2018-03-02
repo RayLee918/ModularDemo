@@ -41,6 +41,7 @@
     
 }
 - (void)initView {
+    
     UIScrollView * view = [UIScrollView new];
     view.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     view.contentSize = CGSizeMake(kScreenWidth, 1000);
@@ -48,6 +49,7 @@
     view.backgroundColor = kWhiteColor;
     view.scrollEnabled = NO;
     _loginView = view;
+    self.firstView = view;
     
     UILabel * titleLabel = [UILabel new];
     titleLabel.frame = CGRectMake(0, 0, kScreenWidth, 80);
@@ -90,7 +92,7 @@
     UIButton * loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     loginBtn.frame = CGRectMake(20, CGRectGetMaxY(_pwdTF.frame) + 30, kScreenWidth - 40, 44);
     [_loginView addSubview:loginBtn];
-    loginBtn.backgroundColor = kBlackColor;
+    loginBtn.backgroundColor = [GlobalSingleton shareInstance].globalColor;
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     loginBtn.titleLabel.font = [UIFont systemFontOfSize:18];
     [loginBtn addTarget:self action:@selector(loginBtnClik:) forControlEvents:UIControlEventTouchUpInside];
@@ -127,10 +129,6 @@
     //    [_loginView addSubview:wxLoginBtn];
     [wxLoginBtn setTitleColor:kGlobalColor forState:UIControlStateNormal];
     [wxLoginBtn setBackgroundImage:kImageNamed(@"login_fast_weixin.png") forState:UIControlStateNormal];
-    [wxLoginBtn addTarget:self action:@selector(wxLoginBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
-    [_loginView addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {

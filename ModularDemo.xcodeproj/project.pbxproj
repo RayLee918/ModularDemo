@@ -12,10 +12,8 @@
 		3B73182D2047C188007E8D80 /* LCLLoginViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73182C2047C188007E8D80 /* LCLLoginViewController1.m */; };
 		3B7318302047C194007E8D80 /* LCLLoginViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73182F2047C194007E8D80 /* LCLLoginViewController2.m */; };
 		3B7318332047C2E2007E8D80 /* LCLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318322047C2E2007E8D80 /* LCLLoginViewController.m */; };
-		3B7318362047D011007E8D80 /* LCLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318352047D011007E8D80 /* LCLSettingViewController.m */; };
 		3B7318392047D0C2007E8D80 /* GlobalSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318382047D0C2007E8D80 /* GlobalSingleton.m */; };
 		3B73185F2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73185E2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m */; };
-		3B7318622047DD52007E8D80 /* HRSampleColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318602047DD52007E8D80 /* HRSampleColorPickerViewController.m */; };
 		3B7318E72047E76A007E8D80 /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318D72047E76A007E8D80 /* HRHSVColorUtil.m */; };
 		3B7318E82047E76A007E8D80 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318D92047E76A007E8D80 /* HRColorPickerView.m */; };
 		3B7318E92047E76A007E8D80 /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318DB2047E76A007E8D80 /* HRBrightnessCursor.m */; };
@@ -25,6 +23,9 @@
 		3B7318ED2047E76A007E8D80 /* HRBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318E02047E76A007E8D80 /* HRBrightnessSlider.m */; };
 		3B7318EE2047E76A007E8D80 /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318E32047E76A007E8D80 /* UIImage+CoreGraphics.m */; };
 		3B7318EF2047E76A007E8D80 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B7318E52047E76A007E8D80 /* Info.plist */; };
+		3B7318F72047FC24007E8D80 /* LCLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318F62047FC24007E8D80 /* LCLBaseViewController.m */; };
+		3B7319002048EC62007E8D80 /* LCLControlViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318FE2048EC62007E8D80 /* LCLControlViewController1.m */; };
+		3B7319042048EC7D007E8D80 /* LCLControlViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7319032048EC7D007E8D80 /* LCLControlViewController2.m */; };
 		3BBB94E920478C1200D008CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94E820478C1200D008CE /* AppDelegate.m */; };
 		3BBB94EC20478C1200D008CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94EB20478C1200D008CE /* ViewController.m */; };
 		3BBB94EF20478C1200D008CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB94ED20478C1200D008CE /* Main.storyboard */; };
@@ -50,14 +51,10 @@
 		3B73182F2047C194007E8D80 /* LCLLoginViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLLoginViewController2.m; sourceTree = "<group>"; };
 		3B7318312047C2E2007E8D80 /* LCLLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLLoginViewController.h; sourceTree = "<group>"; };
 		3B7318322047C2E2007E8D80 /* LCLLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLLoginViewController.m; sourceTree = "<group>"; };
-		3B7318342047D011007E8D80 /* LCLSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLSettingViewController.h; sourceTree = "<group>"; };
-		3B7318352047D011007E8D80 /* LCLSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLSettingViewController.m; sourceTree = "<group>"; };
 		3B7318372047D0C2007E8D80 /* GlobalSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSingleton.h; sourceTree = "<group>"; };
 		3B7318382047D0C2007E8D80 /* GlobalSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSingleton.m; sourceTree = "<group>"; };
 		3B73185D2047DCBC007E8D80 /* HRSampleColorPickerViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRSampleColorPickerViewController2.h; sourceTree = "<group>"; };
 		3B73185E2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRSampleColorPickerViewController2.m; sourceTree = "<group>"; };
-		3B7318602047DD52007E8D80 /* HRSampleColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRSampleColorPickerViewController.m; sourceTree = "<group>"; };
-		3B7318612047DD52007E8D80 /* HRSampleColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRSampleColorPickerViewController.h; sourceTree = "<group>"; };
 		3B7318D52047E76A007E8D80 /* HRColorMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorMapView.h; sourceTree = "<group>"; };
 		3B7318D62047E76A007E8D80 /* HRColorCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorCursor.h; sourceTree = "<group>"; };
 		3B7318D72047E76A007E8D80 /* HRHSVColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRHSVColorUtil.m; sourceTree = "<group>"; };
@@ -76,6 +73,12 @@
 		3B7318E42047E76A007E8D80 /* HRColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPickerView.h; sourceTree = "<group>"; };
 		3B7318E52047E76A007E8D80 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B7318E62047E76A007E8D80 /* HRColorInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorInfoView.h; sourceTree = "<group>"; };
+		3B7318F52047FC24007E8D80 /* LCLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLBaseViewController.h; sourceTree = "<group>"; };
+		3B7318F62047FC24007E8D80 /* LCLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLBaseViewController.m; sourceTree = "<group>"; };
+		3B7318FD2048EC62007E8D80 /* LCLControlViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLControlViewController1.h; sourceTree = "<group>"; };
+		3B7318FE2048EC62007E8D80 /* LCLControlViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLControlViewController1.m; sourceTree = "<group>"; };
+		3B7319022048EC7D007E8D80 /* LCLControlViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLControlViewController2.h; sourceTree = "<group>"; };
+		3B7319032048EC7D007E8D80 /* LCLControlViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLControlViewController2.m; sourceTree = "<group>"; };
 		3BBB94E420478C1200D008CE /* ModularDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBB94E720478C1200D008CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BBB94E820478C1200D008CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -161,6 +164,26 @@
 			path = HRColorPicker;
 			sourceTree = "<group>";
 		};
+		3B7318F42047F4CF007E8D80 /* 自定义风格 */ = {
+			isa = PBXGroup;
+			children = (
+				3B73185D2047DCBC007E8D80 /* HRSampleColorPickerViewController2.h */,
+				3B73185E2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m */,
+			);
+			path = "自定义风格";
+			sourceTree = "<group>";
+		};
+		3B7318FC2048EBFE007E8D80 /* 控件展示 */ = {
+			isa = PBXGroup;
+			children = (
+				3B7318FD2048EC62007E8D80 /* LCLControlViewController1.h */,
+				3B7318FE2048EC62007E8D80 /* LCLControlViewController1.m */,
+				3B7319022048EC7D007E8D80 /* LCLControlViewController2.h */,
+				3B7319032048EC7D007E8D80 /* LCLControlViewController2.m */,
+			);
+			path = "控件展示";
+			sourceTree = "<group>";
+		};
 		3BBB94DB20478C1200D008CE = {
 			isa = PBXGroup;
 			children = (
@@ -192,12 +215,7 @@
 				3BBB94E820478C1200D008CE /* AppDelegate.m */,
 				3BBB94EA20478C1200D008CE /* ViewController.h */,
 				3BBB94EB20478C1200D008CE /* ViewController.m */,
-				3B7318612047DD52007E8D80 /* HRSampleColorPickerViewController.h */,
-				3B7318602047DD52007E8D80 /* HRSampleColorPickerViewController.m */,
-				3B73185D2047DCBC007E8D80 /* HRSampleColorPickerViewController2.h */,
-				3B73185E2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m */,
-				3B7318342047D011007E8D80 /* LCLSettingViewController.h */,
-				3B7318352047D011007E8D80 /* LCLSettingViewController.m */,
+				3B7318F42047F4CF007E8D80 /* 自定义风格 */,
 				3BBB951C20479B3900D008CE /* Class */,
 				3BBB94ED20478C1200D008CE /* Main.storyboard */,
 				3BBB94F220478C1200D008CE /* LaunchScreen.storyboard */,
@@ -224,6 +242,7 @@
 				3BBB951D20479B5900D008CE /* Config */,
 				3B73182A2047C15E007E8D80 /* 登录页面 */,
 				3BBB951F2047A4BA00D008CE /* 注册页面 */,
+				3B7318FC2048EBFE007E8D80 /* 控件展示 */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -233,6 +252,10 @@
 			children = (
 				3BBB95242047ACEC00D008CE /* CLTool.h */,
 				3BBB95232047ACEC00D008CE /* CLTool.m */,
+				3BBB95192047985800D008CE /* LCLAPI.h */,
+				3BBB951A2047985800D008CE /* LCLAPI.m */,
+				3B7318F52047FC24007E8D80 /* LCLBaseViewController.h */,
+				3B7318F62047FC24007E8D80 /* LCLBaseViewController.m */,
 				3BBB951E20479B7100D008CE /* 请求的接口 */,
 			);
 			path = Config;
@@ -241,8 +264,6 @@
 		3BBB951E20479B7100D008CE /* 请求的接口 */ = {
 			isa = PBXGroup;
 			children = (
-				3BBB95192047985800D008CE /* LCLAPI.h */,
-				3BBB951A2047985800D008CE /* LCLAPI.m */,
 			);
 			path = "请求的接口";
 			sourceTree = "<group>";
@@ -400,6 +421,7 @@
 			files = (
 				3BBB95252047ACEC00D008CE /* CLTool.m in Sources */,
 				3BBB951B2047985800D008CE /* LCLAPI.m in Sources */,
+				3B7319002048EC62007E8D80 /* LCLControlViewController1.m in Sources */,
 				3B73185F2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m in Sources */,
 				3B7318392047D0C2007E8D80 /* GlobalSingleton.m in Sources */,
 				3B7318332047C2E2007E8D80 /* LCLLoginViewController.m in Sources */,
@@ -408,8 +430,8 @@
 				3B7318EE2047E76A007E8D80 /* UIImage+CoreGraphics.m in Sources */,
 				3B7318302047C194007E8D80 /* LCLLoginViewController2.m in Sources */,
 				3BBB94F720478C1200D008CE /* main.m in Sources */,
+				3B7319042048EC7D007E8D80 /* LCLControlViewController2.m in Sources */,
 				3B7318292047B2CB007E8D80 /* LCLRegisterViewController2.m in Sources */,
-				3B7318622047DD52007E8D80 /* HRSampleColorPickerViewController.m in Sources */,
 				3BBB94E920478C1200D008CE /* AppDelegate.m in Sources */,
 				3B7318E92047E76A007E8D80 /* HRBrightnessCursor.m in Sources */,
 				3B7318EA2047E76A007E8D80 /* HRColorInfoView.m in Sources */,
@@ -418,8 +440,8 @@
 				3B7318E72047E76A007E8D80 /* HRHSVColorUtil.m in Sources */,
 				3BBB95222047A4D100D008CE /* LCLRegisterViewController.m in Sources */,
 				3B7318EC2047E76A007E8D80 /* HRColorMapView.m in Sources */,
+				3B7318F72047FC24007E8D80 /* LCLBaseViewController.m in Sources */,
 				3B73182D2047C188007E8D80 /* LCLLoginViewController1.m in Sources */,
-				3B7318362047D011007E8D80 /* LCLSettingViewController.m in Sources */,
 				3B7318E82047E76A007E8D80 /* HRColorPickerView.m in Sources */,
 				3BBB95052047915100D008CE /* LCLRegisterViewController1.m in Sources */,
 			);
