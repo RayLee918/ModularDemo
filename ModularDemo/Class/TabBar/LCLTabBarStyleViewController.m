@@ -1,30 +1,37 @@
 //
-//  ViewController.m
+//  LCLTabBarStyleViewController.m
 //  ModularDemo
 //
-//  Created by ZeroHour on 2018/3/1.
+//  Created by 张玉琳 on 2018/3/1.
 //  Copyright © 2018年 hbweipai. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "LCLRegisterViewController.h"
-#import "LCLRegisterViewController1.h"
-#import "LCLRegisterViewController2.h"
+#import "LCLTabBarStyleViewController.h"
 
-@interface LCLRegisterViewController () <UITableViewDelegate, UITableViewDataSource>
+#import "LCLSidewaysViewController.h"
+
+#import "LCLTabbarViewController2.h"
+#import "LCLTabbarViewController3.h"
+#import "LCLTabBArViewController4.h"
+#import "LCLTabBarViewController5.h"
+
+#import "LCLTabBarBtnViewController3.h"
+#import "LCLTabbarBtnViewController5.h"
+
+@interface LCLTabBarStyleViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
     UITableView * _tableView;
     NSArray * _dataSource;
     NSArray * _titles;
 }
+
 @end
 
-@implementation LCLRegisterViewController
+@implementation LCLTabBarStyleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+
     // 创建视图
     [self initView];
     
@@ -34,7 +41,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [LCLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:[GlobalSingleton shareInstance].globalColor title:@"注册页面展示"];
+    [LCLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kGlobalColor title:@"tabBarStyle"];
 }
 
 #pragma mark - 创建视图
@@ -48,8 +55,38 @@
 
 #pragma mark - 加载数据
 - (void)loadNewData {
-    _titles = @[@"注册页面1", @"注册页面2"];
-    _dataSource = @[[LCLRegisterViewController1 class], [LCLRegisterViewController2 class]];
+    _titles = @[
+                
+                /**
+                 
+                 */
+                @"侧滑",
+                
+                /**
+                 普通的tabbar，只需要把对应的.h  .m文件拉进自己的项目里面去，然后把LCLDemeVC修改成自己的VC，tanbar的title和image修改成自己要修改的内容
+                 */
+                @"普通的2个tabbar",
+                @"普通的3个tabbar",
+                @"普通的4个tabbar",
+                @"普通的5个tabbar",
+                
+                /**
+                 
+                 */
+                @"2+1个按钮",
+                @"4+1个按钮"];
+    
+    _dataSource = @[[LCLSidewaysViewController class],
+                    
+                    [LCLTabbarViewController2 class],
+                    [LCLTabbarViewController3 class],
+                    [LCLTabBArViewController4 class],
+                    [LCLTabBarViewController5 class],
+
+                    [LCLTabBarBtnViewController3 class],
+                    [LCLTabbarBtnViewController5 class]
+                    ];
+
 }
 
 #pragma mark - UITableViewDataSource UITableViewDelegate
@@ -79,15 +116,15 @@
     return _titles.count;
 }
 
+#pragma warning
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString * identifier = @"cell";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    
     cell.textLabel.text = _titles[indexPath.row];
-    
     return cell;
 }
 
@@ -95,13 +132,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     Class class = _dataSource[indexPath.row];
     [self.navigationController pushViewController:[class new] animated:YES];
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
 @end
-

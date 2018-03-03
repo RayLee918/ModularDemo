@@ -105,7 +105,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [CLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kWhiteColor title:@"定制风格"];
+    [LCLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kWhiteColor title:@"定制风格"];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

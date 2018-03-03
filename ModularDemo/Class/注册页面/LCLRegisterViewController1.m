@@ -16,7 +16,6 @@
     UITextField * _pwdTF;           // 密码
     UIButton * _uploadImageBtn;     // 上传头像
     
-    // 头像
     UIImage * _headImage;           // 头像
     NSString * _headImageStr;       // 上传头像成功后返回的地址
     
@@ -64,7 +63,7 @@
     [super viewWillAppear:animated];
     
     // 隐藏导航栏
-    [CLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kWhiteColor title:@"注册"];
+    [LCLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kWhiteColor title:@"注册"];
 }
 
 #pragma mark - 创建视图
@@ -186,7 +185,7 @@
     pwdBtn.frame = CGRectMake(kScreenWidth - 44, CGRectGetMinY(pwdTF.frame), 44, 44);
     [scrollView addSubview:pwdBtn];
     [pwdBtn addTarget:self action:@selector(pwdBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [pwdBtn setImage:kImageNamed(@"pwd") forState:UIControlStateNormal];
+    [pwdBtn setImage:kImageNamed(@"password") forState:UIControlStateNormal];
     
     // 分割线
     UIView * line4 = [UIView new];
@@ -290,6 +289,7 @@
                         }
 #warning 注册功能参数设置
                         NSDictionary * params = @{@"nickName":_nicknameTF.text, @"password":_pwdTF.text, @"phone":_phoneTF.text, @"headPic":_headImageStr, @"subcribe":_subcribeTF.text};
+                    
                     NSString * urlStr = [NSString stringWithFormat:@"%@%@", kUrl, [LCLAPI shareInstance].registerUrl];
                         AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
                         [manager GET:urlStr parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -325,6 +325,7 @@
         
 #warning 获取验证码参数设置
         NSDictionary * param = @{@"type":@"1", @"phone":_phoneTF.text};
+        
         [[AFHTTPSessionManager manager] POST:urlStr parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             [MBProgressHUD showTipMessageInWindow:[responseObject objectForKey:kMsg]];
             NSLog(@"%s - %@", __func__, responseObject);
@@ -362,6 +363,7 @@
         if (textField.text.length >= 1) {
 #warning 验证手机号是还被注册参数设置
             NSDictionary * params = @{@"nickName":_nicknameTF.text};
+            
             [[AFHTTPSessionManager manager] GET:[NSString stringWithFormat:@"%@%@", kUrl, [LCLAPI shareInstance].validateNameUrl] parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 if (!([[responseObject objectForKey:kStatus] integerValue] == 1)) {
                     

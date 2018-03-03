@@ -23,7 +23,7 @@
 #import "LCLAPI.h"                      // API接口类
 #import "GlobalSingleton.h"             // 更改主题类
 //#import <UIKit/UIKit.h>
-//#import "MJCSegmentInterface.h"         // 切换控制器
+#import "MJCSegmentInterface.h"         // 切换控制器
 //#import "SDCycleScrollView.h"           // 轮播图
 //#import "CCCycleScrollView.h"
 //#import "Person.h"                      // 用户信息类

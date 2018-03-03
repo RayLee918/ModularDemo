@@ -31,19 +31,19 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [CLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:[GlobalSingleton shareInstance].globalColor title:@"登录"];
+    [LCLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kWhiteColor title:@"登录"];
 }
 
 #pragma mark - 配置
 - (void)config {
 #pragma mark - test
-    _nameTF.text = @"18233989618";
-    _pwdTF.text = @"123456";
+//    _nameTF.text = @"18233989618";
+//    _pwdTF.text = @"123456";
 }
 
 - (void)initView {
     _loginView = [UIView new];
-    _loginView.frame = CGRectMake(0, 64, kScreenWidth, kScreenHeight - 64);
+    _loginView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     [self.view addSubview:_loginView];
     _loginView.backgroundColor = kWhiteColor;
     
@@ -69,7 +69,7 @@
     UIView * line1 = [UIView new];
     line1.frame = CGRectMake(0, CGRectGetMaxY(nameLabel.frame), kScreenWidth, 1);
     [_loginView addSubview:line1];
-    line1.backgroundColor = kLineColor;
+    line1.backgroundColor = [GlobalSingleton shareInstance].globalColor;
     
     // 密码
     UILabel * pwdLabel = [UILabel new];
@@ -89,22 +89,22 @@
     UIButton * pwdBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     pwdBtn.frame = CGRectMake(kScreenWidth - 44, CGRectGetMinY(_pwdTF.frame), 44, 44);
     [_loginView addSubview:pwdBtn];
-    [pwdBtn setImage:kImageNamed(@"pwd.png") forState:UIControlStateNormal];;
-    [pwdBtn addTarget:self action:@selector(pwdBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [pwdBtn setImage:kImageNamed(@"password") forState:UIControlStateNormal];;
+//    [pwdBtn addTarget:self action:@selector(pwdBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     UIView * line2 = [UIView new];
     line2.frame = CGRectMake(0, CGRectGetMaxY(pwdLabel.frame), kScreenWidth, 1);
     [_loginView addSubview:line2];
-    line2.backgroundColor = kLineColor;
+    line2.backgroundColor = [GlobalSingleton shareInstance].globalColor;
     
     // 登录
     UIButton * loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     loginBtn.frame = CGRectMake(30, CGRectGetMaxY(line2.frame) + 12, kScreenWidth - 60, 44);
     [_loginView addSubview:loginBtn];
-    [CLTool gradualBackgroundColor:loginBtn];
+    loginBtn.backgroundColor = [GlobalSingleton shareInstance].globalColor;
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     loginBtn.titleLabel.font = [UIFont systemFontOfSize:18];
-    [loginBtn addTarget:self action:@selector(loginBtn:) forControlEvents:UIControlEventTouchUpInside];
+//    [loginBtn addTarget:self action:@selector(loginBtn:) forControlEvents:UIControlEventTouchUpInside];
     loginBtn.layer.cornerRadius = 5;
     loginBtn.layer.masksToBounds = YES;
     
@@ -112,37 +112,34 @@
     UIButton * forgetPwdBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     forgetPwdBtn.frame = CGRectMake(30, CGRectGetMaxY(loginBtn.frame) + 12, (kScreenWidth - 60) / 2, 44);
     [_loginView addSubview:forgetPwdBtn];
-    [forgetPwdBtn setTitleColor:kColor(0xD0021B) forState:UIControlStateNormal];
     [forgetPwdBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
-    [forgetPwdBtn addTarget:self action:@selector(forgetPwdBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [forgetPwdBtn addTarget:self action:@selector(forgetPwdBtnClick) forControlEvents:UIControlEventTouchUpInside];
     forgetPwdBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    
+    [forgetPwdBtn setTitleColor:[GlobalSingleton shareInstance].globalColor forState:UIControlStateNormal];
+     
     // 快速注册
     UIButton * registerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     registerBtn.frame = CGRectMake(CGRectGetMaxX(forgetPwdBtn.frame), CGRectGetMaxY(loginBtn.frame) + 12, (kScreenWidth - 60) / 2, 44);
     [_loginView addSubview:registerBtn];
-    [registerBtn setTitleColor:kColor(0xD0021B) forState:UIControlStateNormal];
     [registerBtn setTitle:@"快速注册" forState:UIControlStateNormal];
-    [registerBtn addTarget:self action:@selector(registerBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [registerBtn addTarget:self action:@selector(registerBtnClick) forControlEvents:UIControlEventTouchUpInside];
     registerBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+    [registerBtn setTitleColor:[GlobalSingleton shareInstance].globalColor forState:UIControlStateNormal];
     
     // QQ快速登录
     UIButton * qqLoginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     qqLoginBtn.frame = CGRectMake(kScreenWidth / 2 - 10 - 44, kScreenHeight - 64 - kTabbarHeight - 10 - 44, 44, 44);
     [_loginView addSubview:qqLoginBtn];
-    [qqLoginBtn setTitleColor:kRedColor forState:UIControlStateNormal];
     [qqLoginBtn setBackgroundImage:kImageNamed(@"login_fast_qq.png") forState:UIControlStateNormal];
-    [qqLoginBtn addTarget:self action:@selector(qqLoginBtnClick) forControlEvents:UIControlEventTouchUpInside];
+//    [qqLoginBtn addTarget:self action:@selector(qqLoginBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     // 微信快速登录
     UIButton * wxLoginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    wxLoginBtn.frame = CGRectMake(kScreenWidth / 2 + 10, kScreenHeight - 64 - kTabbarHeight - 10 - 44, 44, 44);
+    wxLoginBtn.frame = CGRectMake(kScreenWidth / 2 + 10, kScreenHeight - 64 - 49 - 10 - 44, 44, 44);
     [_loginView addSubview:wxLoginBtn];
-    [wxLoginBtn setTitleColor:kRedColor forState:UIControlStateNormal];
     [wxLoginBtn setBackgroundImage:kImageNamed(@"login_fast_weixin.png") forState:UIControlStateNormal];
-    [wxLoginBtn addTarget:self action:@selector(wxLoginBtnClick) forControlEvents:UIControlEventTouchUpInside];
+//    [wxLoginBtn addTarget:self action:@selector(wxLoginBtnClick) forControlEvents:UIControlEventTouchUpInside];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

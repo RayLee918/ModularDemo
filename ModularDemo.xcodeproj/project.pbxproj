@@ -26,6 +26,27 @@
 		3B7318F72047FC24007E8D80 /* LCLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318F62047FC24007E8D80 /* LCLBaseViewController.m */; };
 		3B7319002048EC62007E8D80 /* LCLControlViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318FE2048EC62007E8D80 /* LCLControlViewController1.m */; };
 		3B7319042048EC7D007E8D80 /* LCLControlViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7319032048EC7D007E8D80 /* LCLControlViewController2.m */; };
+		3B73193C204912E7007E8D80 /* UIColor+MJCClassExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B731929204912E7007E8D80 /* UIColor+MJCClassExtension.m */; };
+		3B73193D204912E7007E8D80 /* MJCCommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73192E204912E7007E8D80 /* MJCCommonTools.m */; };
+		3B73193E204912E7007E8D80 /* UIButton+MJCClassExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73192F204912E7007E8D80 /* UIButton+MJCClassExtension.m */; };
+		3B73193F204912E7007E8D80 /* UIView+MJCClassExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B731930204912E7007E8D80 /* UIView+MJCClassExtension.m */; };
+		3B731940204912E7007E8D80 /* MJCIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B731933204912E7007E8D80 /* MJCIndicatorView.m */; };
+		3B731941204912E7007E8D80 /* MJCTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B731934204912E7007E8D80 /* MJCTabItem.m */; };
+		3B731942204912E7007E8D80 /* MJCTitlesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B731938204912E7007E8D80 /* MJCTitlesView.m */; };
+		3B731943204912E7007E8D80 /* MJCChildMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B731939204912E7007E8D80 /* MJCChildMainView.m */; };
+		3B731944204912E7007E8D80 /* MJCSegmentInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73193A204912E7007E8D80 /* MJCSegmentInterface.m */; };
+		3B731945204912E7007E8D80 /* MJCSegmentStylesTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73193B204912E7007E8D80 /* MJCSegmentStylesTools.m */; };
+		3B731948204918A6007E8D80 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B731946204918A6007E8D80 /* CategoryCell.m */; };
+		3B73196420491CFC007E8D80 /* LCLSidewaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73194C20491CFC007E8D80 /* LCLSidewaysViewController.m */; };
+		3B73196520491CFC007E8D80 /* LCLTabbarViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73194F20491CFC007E8D80 /* LCLTabbarViewController2.m */; };
+		3B73196620491CFC007E8D80 /* LCLTabBarViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73195120491CFC007E8D80 /* LCLTabBarViewController5.m */; };
+		3B73196720491CFC007E8D80 /* LCLTabBArViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73195320491CFC007E8D80 /* LCLTabBArViewController4.m */; };
+		3B73196820491CFC007E8D80 /* LCLTabbarViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73195520491CFC007E8D80 /* LCLTabbarViewController3.m */; };
+		3B73196920491CFC007E8D80 /* LCLTabbarBtnViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73195920491CFC007E8D80 /* LCLTabbarBtnViewController5.m */; };
+		3B73196A20491CFC007E8D80 /* LCLMyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73195D20491CFC007E8D80 /* LCLMyTabBar.m */; };
+		3B73196B20491CFC007E8D80 /* LCLTabBarBtnViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73196020491CFC007E8D80 /* LCLTabBarBtnViewController3.m */; };
+		3B73196C20491CFC007E8D80 /* LCLTabBarStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73196120491CFC007E8D80 /* LCLTabBarStyleViewController.m */; };
+		3B73196D20491CFC007E8D80 /* LCLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73196220491CFC007E8D80 /* LCLDemoViewController.m */; };
 		3BBB94E920478C1200D008CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94E820478C1200D008CE /* AppDelegate.m */; };
 		3BBB94EC20478C1200D008CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94EB20478C1200D008CE /* ViewController.m */; };
 		3BBB94EF20478C1200D008CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB94ED20478C1200D008CE /* Main.storyboard */; };
@@ -79,6 +100,48 @@
 		3B7318FE2048EC62007E8D80 /* LCLControlViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLControlViewController1.m; sourceTree = "<group>"; };
 		3B7319022048EC7D007E8D80 /* LCLControlViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLControlViewController2.h; sourceTree = "<group>"; };
 		3B7319032048EC7D007E8D80 /* LCLControlViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLControlViewController2.m; sourceTree = "<group>"; };
+		3B731926204912E7007E8D80 /* MJCSegmentInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCSegmentInterface.h; sourceTree = "<group>"; };
+		3B731927204912E7007E8D80 /* MJCSegmentStylesTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCSegmentStylesTools.h; sourceTree = "<group>"; };
+		3B731929204912E7007E8D80 /* UIColor+MJCClassExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MJCClassExtension.m"; sourceTree = "<group>"; };
+		3B73192A204912E7007E8D80 /* MJCCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCCommonTools.h; sourceTree = "<group>"; };
+		3B73192B204912E7007E8D80 /* UIView+MJCClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJCClassExtension.h"; sourceTree = "<group>"; };
+		3B73192C204912E7007E8D80 /* UIButton+MJCClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MJCClassExtension.h"; sourceTree = "<group>"; };
+		3B73192D204912E7007E8D80 /* UIColor+MJCClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MJCClassExtension.h"; sourceTree = "<group>"; };
+		3B73192E204912E7007E8D80 /* MJCCommonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJCCommonTools.m; sourceTree = "<group>"; };
+		3B73192F204912E7007E8D80 /* UIButton+MJCClassExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MJCClassExtension.m"; sourceTree = "<group>"; };
+		3B731930204912E7007E8D80 /* UIView+MJCClassExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJCClassExtension.m"; sourceTree = "<group>"; };
+		3B731932204912E7007E8D80 /* MJCTitlesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCTitlesView.h; sourceTree = "<group>"; };
+		3B731933204912E7007E8D80 /* MJCIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJCIndicatorView.m; sourceTree = "<group>"; };
+		3B731934204912E7007E8D80 /* MJCTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJCTabItem.m; sourceTree = "<group>"; };
+		3B731935204912E7007E8D80 /* MJCChildMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCChildMainView.h; sourceTree = "<group>"; };
+		3B731936204912E7007E8D80 /* MJCTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCTabItem.h; sourceTree = "<group>"; };
+		3B731937204912E7007E8D80 /* MJCIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCIndicatorView.h; sourceTree = "<group>"; };
+		3B731938204912E7007E8D80 /* MJCTitlesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJCTitlesView.m; sourceTree = "<group>"; };
+		3B731939204912E7007E8D80 /* MJCChildMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJCChildMainView.m; sourceTree = "<group>"; };
+		3B73193A204912E7007E8D80 /* MJCSegmentInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJCSegmentInterface.m; sourceTree = "<group>"; };
+		3B73193B204912E7007E8D80 /* MJCSegmentStylesTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJCSegmentStylesTools.m; sourceTree = "<group>"; };
+		3B731946204918A6007E8D80 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
+		3B731947204918A6007E8D80 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
+		3B73194B20491CFC007E8D80 /* LCLSidewaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLSidewaysViewController.h; sourceTree = "<group>"; };
+		3B73194C20491CFC007E8D80 /* LCLSidewaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLSidewaysViewController.m; sourceTree = "<group>"; };
+		3B73194E20491CFC007E8D80 /* LCLTabBArViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTabBArViewController4.h; sourceTree = "<group>"; };
+		3B73194F20491CFC007E8D80 /* LCLTabbarViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTabbarViewController2.m; sourceTree = "<group>"; };
+		3B73195020491CFC007E8D80 /* LCLTabbarViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTabbarViewController3.h; sourceTree = "<group>"; };
+		3B73195120491CFC007E8D80 /* LCLTabBarViewController5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTabBarViewController5.m; sourceTree = "<group>"; };
+		3B73195220491CFC007E8D80 /* LCLTabbarViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTabbarViewController2.h; sourceTree = "<group>"; };
+		3B73195320491CFC007E8D80 /* LCLTabBArViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTabBArViewController4.m; sourceTree = "<group>"; };
+		3B73195420491CFC007E8D80 /* LCLTabBarViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTabBarViewController5.h; sourceTree = "<group>"; };
+		3B73195520491CFC007E8D80 /* LCLTabbarViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTabbarViewController3.m; sourceTree = "<group>"; };
+		3B73195620491CFC007E8D80 /* LCLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLDemoViewController.h; sourceTree = "<group>"; };
+		3B73195920491CFC007E8D80 /* LCLTabbarBtnViewController5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTabbarBtnViewController5.m; sourceTree = "<group>"; };
+		3B73195A20491CFC007E8D80 /* LCLTabbarBtnViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTabbarBtnViewController5.h; sourceTree = "<group>"; };
+		3B73195C20491CFC007E8D80 /* LCLMyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLMyTabBar.h; sourceTree = "<group>"; };
+		3B73195D20491CFC007E8D80 /* LCLMyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLMyTabBar.m; sourceTree = "<group>"; };
+		3B73195F20491CFC007E8D80 /* LCLTabBarBtnViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTabBarBtnViewController3.h; sourceTree = "<group>"; };
+		3B73196020491CFC007E8D80 /* LCLTabBarBtnViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTabBarBtnViewController3.m; sourceTree = "<group>"; };
+		3B73196120491CFC007E8D80 /* LCLTabBarStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTabBarStyleViewController.m; sourceTree = "<group>"; };
+		3B73196220491CFC007E8D80 /* LCLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLDemoViewController.m; sourceTree = "<group>"; };
+		3B73196320491CFC007E8D80 /* LCLTabBarStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTabBarStyleViewController.h; sourceTree = "<group>"; };
 		3BBB94E420478C1200D008CE /* ModularDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBB94E720478C1200D008CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BBB94E820478C1200D008CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,7 +164,7 @@
 		3BBB95202047A4D100D008CE /* LCLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController.h; sourceTree = "<group>"; };
 		3BBB95212047A4D100D008CE /* LCLRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController.m; sourceTree = "<group>"; };
 		3BBB95232047ACEC00D008CE /* CLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTool.m; sourceTree = "<group>"; };
-		3BBB95242047ACEC00D008CE /* CLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTool.h; sourceTree = "<group>"; };
+		3BBB95242047ACEC00D008CE /* LCLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTool.h; sourceTree = "<group>"; };
 		9BBEC45BBF6F8002E7DB42C7 /* Pods-ModularDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModularDemo/Pods-ModularDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DA8383C6E83956CD8CA8FFF5 /* Pods-ModularDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModularDemo/Pods-ModularDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,8 +243,150 @@
 				3B7318FE2048EC62007E8D80 /* LCLControlViewController1.m */,
 				3B7319022048EC7D007E8D80 /* LCLControlViewController2.h */,
 				3B7319032048EC7D007E8D80 /* LCLControlViewController2.m */,
+				3B731947204918A6007E8D80 /* CategoryCell.h */,
+				3B731946204918A6007E8D80 /* CategoryCell.m */,
 			);
 			path = "控件展示";
+			sourceTree = "<group>";
+		};
+		3B731924204912C8007E8D80 /* 第三方库 */ = {
+			isa = PBXGroup;
+			children = (
+				3B731925204912E7007E8D80 /* MJCSlideInterface */,
+				3BBB9513204794EA00D008CE /* MBProgressHUD+Ali */,
+			);
+			path = "第三方库";
+			sourceTree = "<group>";
+		};
+		3B731925204912E7007E8D80 /* MJCSlideInterface */ = {
+			isa = PBXGroup;
+			children = (
+				3B731926204912E7007E8D80 /* MJCSegmentInterface.h */,
+				3B731927204912E7007E8D80 /* MJCSegmentStylesTools.h */,
+				3B731928204912E7007E8D80 /* common */,
+				3B731931204912E7007E8D80 /* childs */,
+				3B73193A204912E7007E8D80 /* MJCSegmentInterface.m */,
+				3B73193B204912E7007E8D80 /* MJCSegmentStylesTools.m */,
+			);
+			path = MJCSlideInterface;
+			sourceTree = "<group>";
+		};
+		3B731928204912E7007E8D80 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3B731929204912E7007E8D80 /* UIColor+MJCClassExtension.m */,
+				3B73192A204912E7007E8D80 /* MJCCommonTools.h */,
+				3B73192B204912E7007E8D80 /* UIView+MJCClassExtension.h */,
+				3B73192C204912E7007E8D80 /* UIButton+MJCClassExtension.h */,
+				3B73192D204912E7007E8D80 /* UIColor+MJCClassExtension.h */,
+				3B73192E204912E7007E8D80 /* MJCCommonTools.m */,
+				3B73192F204912E7007E8D80 /* UIButton+MJCClassExtension.m */,
+				3B731930204912E7007E8D80 /* UIView+MJCClassExtension.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		3B731931204912E7007E8D80 /* childs */ = {
+			isa = PBXGroup;
+			children = (
+				3B731932204912E7007E8D80 /* MJCTitlesView.h */,
+				3B731933204912E7007E8D80 /* MJCIndicatorView.m */,
+				3B731934204912E7007E8D80 /* MJCTabItem.m */,
+				3B731935204912E7007E8D80 /* MJCChildMainView.h */,
+				3B731936204912E7007E8D80 /* MJCTabItem.h */,
+				3B731937204912E7007E8D80 /* MJCIndicatorView.h */,
+				3B731938204912E7007E8D80 /* MJCTitlesView.m */,
+				3B731939204912E7007E8D80 /* MJCChildMainView.m */,
+			);
+			path = childs;
+			sourceTree = "<group>";
+		};
+		3B73194920491CFC007E8D80 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3B73194A20491CFC007E8D80 /* 侧移 */,
+				3B73194D20491CFC007E8D80 /* 普通的 */,
+				3B73195720491CFC007E8D80 /* 有一个按钮的 */,
+				3B73195620491CFC007E8D80 /* LCLDemoViewController.h */,
+				3B73196120491CFC007E8D80 /* LCLTabBarStyleViewController.m */,
+				3B73196220491CFC007E8D80 /* LCLDemoViewController.m */,
+				3B73196320491CFC007E8D80 /* LCLTabBarStyleViewController.h */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3B73194A20491CFC007E8D80 /* 侧移 */ = {
+			isa = PBXGroup;
+			children = (
+				3B73194B20491CFC007E8D80 /* LCLSidewaysViewController.h */,
+				3B73194C20491CFC007E8D80 /* LCLSidewaysViewController.m */,
+			);
+			path = "侧移";
+			sourceTree = "<group>";
+		};
+		3B73194D20491CFC007E8D80 /* 普通的 */ = {
+			isa = PBXGroup;
+			children = (
+				3B73194E20491CFC007E8D80 /* LCLTabBArViewController4.h */,
+				3B73194F20491CFC007E8D80 /* LCLTabbarViewController2.m */,
+				3B73195020491CFC007E8D80 /* LCLTabbarViewController3.h */,
+				3B73195120491CFC007E8D80 /* LCLTabBarViewController5.m */,
+				3B73195220491CFC007E8D80 /* LCLTabbarViewController2.h */,
+				3B73195320491CFC007E8D80 /* LCLTabBArViewController4.m */,
+				3B73195420491CFC007E8D80 /* LCLTabBarViewController5.h */,
+				3B73195520491CFC007E8D80 /* LCLTabbarViewController3.m */,
+			);
+			path = "普通的";
+			sourceTree = "<group>";
+		};
+		3B73195720491CFC007E8D80 /* 有一个按钮的 */ = {
+			isa = PBXGroup;
+			children = (
+				3B73195B20491CFC007E8D80 /* Common */,
+				3B73195820491CFC007E8D80 /* 4+1个 */,
+				3B73195E20491CFC007E8D80 /* 2+1个 */,
+			);
+			path = "有一个按钮的";
+			sourceTree = "<group>";
+		};
+		3B73195820491CFC007E8D80 /* 4+1个 */ = {
+			isa = PBXGroup;
+			children = (
+				3B73195920491CFC007E8D80 /* LCLTabbarBtnViewController5.m */,
+				3B73195A20491CFC007E8D80 /* LCLTabbarBtnViewController5.h */,
+			);
+			path = "4+1个";
+			sourceTree = "<group>";
+		};
+		3B73195B20491CFC007E8D80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3B73195C20491CFC007E8D80 /* LCLMyTabBar.h */,
+				3B73195D20491CFC007E8D80 /* LCLMyTabBar.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3B73195E20491CFC007E8D80 /* 2+1个 */ = {
+			isa = PBXGroup;
+			children = (
+				3B73195F20491CFC007E8D80 /* LCLTabBarBtnViewController3.h */,
+				3B73196020491CFC007E8D80 /* LCLTabBarBtnViewController3.m */,
+			);
+			path = "2+1个";
+			sourceTree = "<group>";
+		};
+		3B73196E20495517007E8D80 /* 单例 */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB95192047985800D008CE /* LCLAPI.h */,
+				3BBB951A2047985800D008CE /* LCLAPI.m */,
+				3B7318372047D0C2007E8D80 /* GlobalSingleton.h */,
+				3B7318382047D0C2007E8D80 /* GlobalSingleton.m */,
+				3BBB95242047ACEC00D008CE /* LCLTool.h */,
+				3BBB95232047ACEC00D008CE /* CLTool.m */,
+			);
+			path = "单例";
 			sourceTree = "<group>";
 		};
 		3BBB94DB20478C1200D008CE = {
@@ -189,8 +394,6 @@
 			children = (
 				3BBB94F020478C1200D008CE /* Assets.xcassets */,
 				3BBB95022047911100D008CE /* PrefixHeader.pch */,
-				3B7318372047D0C2007E8D80 /* GlobalSingleton.h */,
-				3B7318382047D0C2007E8D80 /* GlobalSingleton.m */,
 				3B7318D42047E76A007E8D80 /* HRColorPicker */,
 				3BBB94E620478C1200D008CE /* ModularDemo */,
 				3BBB94E520478C1200D008CE /* Products */,
@@ -221,7 +424,7 @@
 				3BBB94F220478C1200D008CE /* LaunchScreen.storyboard */,
 				3BBB94F520478C1200D008CE /* Info.plist */,
 				3BBB94F620478C1200D008CE /* main.m */,
-				3BBB9513204794EA00D008CE /* MBProgressHUD+Ali */,
+				3B731924204912C8007E8D80 /* 第三方库 */,
 			);
 			path = ModularDemo;
 			sourceTree = "<group>";
@@ -239,33 +442,23 @@
 		3BBB951C20479B3900D008CE /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				3BBB951D20479B5900D008CE /* Config */,
-				3B73182A2047C15E007E8D80 /* 登录页面 */,
+				3BBB951D20479B5900D008CE /* 配置_工具文件 */,
 				3BBB951F2047A4BA00D008CE /* 注册页面 */,
+				3B73182A2047C15E007E8D80 /* 登录页面 */,
+				3B73194920491CFC007E8D80 /* TabBar */,
 				3B7318FC2048EBFE007E8D80 /* 控件展示 */,
 			);
 			path = Class;
 			sourceTree = "<group>";
 		};
-		3BBB951D20479B5900D008CE /* Config */ = {
+		3BBB951D20479B5900D008CE /* 配置_工具文件 */ = {
 			isa = PBXGroup;
 			children = (
-				3BBB95242047ACEC00D008CE /* CLTool.h */,
-				3BBB95232047ACEC00D008CE /* CLTool.m */,
-				3BBB95192047985800D008CE /* LCLAPI.h */,
-				3BBB951A2047985800D008CE /* LCLAPI.m */,
+				3B73196E20495517007E8D80 /* 单例 */,
 				3B7318F52047FC24007E8D80 /* LCLBaseViewController.h */,
 				3B7318F62047FC24007E8D80 /* LCLBaseViewController.m */,
-				3BBB951E20479B7100D008CE /* 请求的接口 */,
 			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		3BBB951E20479B7100D008CE /* 请求的接口 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "请求的接口";
+			path = "配置_工具文件";
 			sourceTree = "<group>";
 		};
 		3BBB951F2047A4BA00D008CE /* 注册页面 */ = {
@@ -420,30 +613,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BBB95252047ACEC00D008CE /* CLTool.m in Sources */,
+				3B73196D20491CFC007E8D80 /* LCLDemoViewController.m in Sources */,
+				3B731948204918A6007E8D80 /* CategoryCell.m in Sources */,
 				3BBB951B2047985800D008CE /* LCLAPI.m in Sources */,
 				3B7319002048EC62007E8D80 /* LCLControlViewController1.m in Sources */,
 				3B73185F2047DCBC007E8D80 /* HRSampleColorPickerViewController2.m in Sources */,
+				3B73196B20491CFC007E8D80 /* LCLTabBarBtnViewController3.m in Sources */,
 				3B7318392047D0C2007E8D80 /* GlobalSingleton.m in Sources */,
+				3B731941204912E7007E8D80 /* MJCTabItem.m in Sources */,
 				3B7318332047C2E2007E8D80 /* LCLLoginViewController.m in Sources */,
+				3B73193F204912E7007E8D80 /* UIView+MJCClassExtension.m in Sources */,
+				3B73193C204912E7007E8D80 /* UIColor+MJCClassExtension.m in Sources */,
 				3B7318EB2047E76A007E8D80 /* HRColorCursor.m in Sources */,
+				3B731943204912E7007E8D80 /* MJCChildMainView.m in Sources */,
+				3B73193D204912E7007E8D80 /* MJCCommonTools.m in Sources */,
 				3BBB94EC20478C1200D008CE /* ViewController.m in Sources */,
+				3B731944204912E7007E8D80 /* MJCSegmentInterface.m in Sources */,
+				3B73196720491CFC007E8D80 /* LCLTabBArViewController4.m in Sources */,
 				3B7318EE2047E76A007E8D80 /* UIImage+CoreGraphics.m in Sources */,
 				3B7318302047C194007E8D80 /* LCLLoginViewController2.m in Sources */,
+				3B73196820491CFC007E8D80 /* LCLTabbarViewController3.m in Sources */,
+				3B73196520491CFC007E8D80 /* LCLTabbarViewController2.m in Sources */,
+				3B731945204912E7007E8D80 /* MJCSegmentStylesTools.m in Sources */,
 				3BBB94F720478C1200D008CE /* main.m in Sources */,
 				3B7319042048EC7D007E8D80 /* LCLControlViewController2.m in Sources */,
+				3B731940204912E7007E8D80 /* MJCIndicatorView.m in Sources */,
 				3B7318292047B2CB007E8D80 /* LCLRegisterViewController2.m in Sources */,
 				3BBB94E920478C1200D008CE /* AppDelegate.m in Sources */,
+				3B73193E204912E7007E8D80 /* UIButton+MJCClassExtension.m in Sources */,
 				3B7318E92047E76A007E8D80 /* HRBrightnessCursor.m in Sources */,
 				3B7318EA2047E76A007E8D80 /* HRColorInfoView.m in Sources */,
 				3BBB9518204794EA00D008CE /* MBProgressHUD+Ali.m in Sources */,
+				3B73196A20491CFC007E8D80 /* LCLMyTabBar.m in Sources */,
+				3B73196420491CFC007E8D80 /* LCLSidewaysViewController.m in Sources */,
+				3B731942204912E7007E8D80 /* MJCTitlesView.m in Sources */,
 				3B7318ED2047E76A007E8D80 /* HRBrightnessSlider.m in Sources */,
+				3B73196C20491CFC007E8D80 /* LCLTabBarStyleViewController.m in Sources */,
 				3B7318E72047E76A007E8D80 /* HRHSVColorUtil.m in Sources */,
 				3BBB95222047A4D100D008CE /* LCLRegisterViewController.m in Sources */,
+				3B73196920491CFC007E8D80 /* LCLTabbarBtnViewController5.m in Sources */,
 				3B7318EC2047E76A007E8D80 /* HRColorMapView.m in Sources */,
 				3B7318F72047FC24007E8D80 /* LCLBaseViewController.m in Sources */,
 				3B73182D2047C188007E8D80 /* LCLLoginViewController1.m in Sources */,
 				3B7318E82047E76A007E8D80 /* HRColorPickerView.m in Sources */,
 				3BBB95052047915100D008CE /* LCLRegisterViewController1.m in Sources */,
+				3B73196620491CFC007E8D80 /* LCLTabBarViewController5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

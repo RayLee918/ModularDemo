@@ -17,6 +17,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
+    [self endEditing:YES];
 }
 
 @end
@@ -35,6 +36,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"%s", __func__);
     [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,4 +12,5 @@
 
 @property (nonatomic, strong) UIColor * globalColor;
 + (instancetype)shareInstance;
+
 @end

@@ -42,6 +42,44 @@ static LCLAPI * _instance;
     // 修改密码
     _instance.changePasswordUrl = [NSString stringWithFormat:@"%@%@", _instance.baseUrl, @""];
     
+    // ------------------- 参数名 -------------------
+    // 昵称
+    _instance.nickName = @"";
+    
+    // 手机号
+    _instance.phoneNumber = @"";
+    
+    // 头像
+    _instance.headPic = @"";
+    
+    // 验证码
+    _instance.verifyCode = @"";
+    
+    // 登录密码
+    _instance.loginPassword = @"";
+    
+    // 注册: 第一次密码
+    _instance.firstPassword = @"";
+    
+    // 注册: 第二次密码
+    _instance.secondPassword = @"";
+    
+    // 邀请码
+    _instance.inviteCode = @"";
+    
+    // ------------------- 提示信息 -------------------
+    // 登录成功
+    _instance.loginSuccessTip = @"登录成功";
+    
+    // 退出成功
+    _instance.logoutSuccessTip = @"退出成功";
+    
+    // 手机号为11位
+    _instance.phoneTip = @"手机号为11位";
+    
+    // 密码不一致
+    _instance.passwordTip = @"密码不一致";
+    
     return _instance;
 }
 

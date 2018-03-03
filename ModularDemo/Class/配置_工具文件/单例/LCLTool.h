@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface CLTool : NSObject
+@interface LCLTool : NSObject
 
 /**
  *  获取path路径下文件夹的大小

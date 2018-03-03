@@ -12,6 +12,7 @@
 #import "HRSampleColorPickerViewController2.h"  // 自定义风格页面
 #import "LCLControlViewController1.h"   // 控件展示
 #import "LCLControlViewController2.h"   // 控件展示
+#import "LCLTabBarStyleViewController.h"// 标签页面
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource, HRColorPickerViewControllerDelegate>
 {
@@ -44,19 +45,24 @@
     
     // 分类标题
     _titles = @[@"页面展示", @"控件展示"];
-    _subTitles = @[@[@"注册页面", @"登录页面"],
-                   @[@"展示页面1", @"展示页面2"]
+    _subTitles = @[@[@"注册页面", @"登录页面", @"标签页面"],
+                   @[@"顶部导航切换", @"侧部导航切换"]
                    ];
     
-    _dataSource = @[@[[LCLRegisterViewController class], [LCLLoginViewController class]],
-                     @[[LCLControlViewController1 class], [LCLControlViewController2 class]]
+    _dataSource = @[
+  @[[LCLRegisterViewController class]
+    , [LCLLoginViewController class]
+    , [LCLTabBarStyleViewController class]]
+  
+                    ,@[[LCLControlViewController1 class]
+                       , [LCLControlViewController2 class]]
                      ];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [CLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kGlobalColor title:@"私人定制"];
+    [LCLTool globalSetting:self isNavigationBarHidden:NO backgroundColor:kGlobalColor title:@"私人定制"];
 }
 
 #pragma mark - 创建视图
@@ -144,6 +150,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
