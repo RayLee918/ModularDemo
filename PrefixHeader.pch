@@ -16,27 +16,27 @@
 
 // ------------------- 引入的第三方框架 -------------------
 #pragma mark - 用到的头文件
-#import "CLTool.h"                      // 自己的工具类
-#import "AFNetworking.h"                // 网络请求库
-#import "MBProgressHUD.h"               // 提示视图
+#import "LCLTool.h"                         // 自己的工具类
+#import "AFNetworking.h"                    // 网络请求库
+#import "MBProgressHUD.h"                   // 提示视图
 #import "MBProgressHUD+Ali.h"
-#import "LCLAPI.h"                      // API接口类
-#import "GlobalSingleton.h"             // 更改主题类
+#import "LCLAPI.h"                          // API接口类
+#import "GlobalSingleton.h"                 // 更改主题类
 //#import <UIKit/UIKit.h>
-#import "MJCSegmentInterface.h"         // 切换控制器
-//#import "SDCycleScrollView.h"           // 轮播图
+#import "MJCSegmentInterface.h"             // 切换控制器
+//#import "SDCycleScrollView.h"             // 轮播图
 //#import "CCCycleScrollView.h"
-//#import "Person.h"                      // 用户信息类
-//#import "UIImageView+AFNetworking.h"    // 图片加载
-//#import <MJRefresh.h>                   // 上提加载, 下拉刷新
-//#import "JPUSHService.h"                // 极光推送
-//#import <UMSocialCore/UMSocialCore.h>   // 友盟分享
-//#import <AlipaySDK/AlipaySDK.h>         // 支付宝支付
-//#import "WXApi.h"                       // 微信支付
+//#import "Person.h"                        // 用户信息类
+//#import "UIImageView+AFNetworking.h"      // 图片加载
+//#import <MJRefresh.h>                     // 上提加载, 下拉刷新
+//#import "JPUSHService.h"                  // 极光推送
+//#import <UMSocialCore/UMSocialCore.h>     // 友盟分享
+//#import <AlipaySDK/AlipaySDK.h>           // 支付宝支付
+//#import "WXApi.h"                         // 微信支付
 ////#import "ClearCacheTool.h"              // 清除缓存
-//#import "BLImagePickerViewController.h" // 图片选择
+//#import "BLImagePickerViewController.h"   // 图片选择
 //#import "SVProgressHUD.h"
-//#import "UIImage+Color.h"               // 图片旋转
+//#import "UIImage+Color.h"                 // 图片旋转
 //#import "UIImage+Rotate.h"
 //#import "UIImage+SubImage.h"
 //#import "UIImage+Gif.h"

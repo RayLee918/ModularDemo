@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LCLRegisterViewController.h"   // 注册页面
-#import "LCLLoginViewController.h"      // 登录页面
+#import "LCLRLFViewController.h"   // 注册_登录_忘记密码页面
 #import "HRSampleColorPickerViewController2.h"  // 自定义风格页面
 #import "LCLControlViewController1.h"   // 控件展示
 #import "LCLControlViewController2.h"   // 控件展示
@@ -45,13 +44,12 @@
     
     // 分类标题
     _titles = @[@"页面展示", @"控件展示"];
-    _subTitles = @[@[@"注册页面", @"登录页面", @"标签页面"],
+    _subTitles = @[@[@"注册_登录_忘记密码页面", @"标签页面"],
                    @[@"顶部导航切换", @"侧部导航切换"]
                    ];
     
     _dataSource = @[
-  @[[LCLRegisterViewController class]
-    , [LCLLoginViewController class]
+  @[[LCLRLFViewController class]
     , [LCLTabBarStyleViewController class]]
   
                     ,@[[LCLControlViewController1 class]

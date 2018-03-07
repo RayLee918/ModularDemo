@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1451A478EFA8328C49792949 /* libPods-ModularDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E9341EC873D846FB584902 /* libPods-ModularDemo.a */; };
-		3B7318292047B2CB007E8D80 /* LCLRegisterViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318282047B2CB007E8D80 /* LCLRegisterViewController2.m */; };
+		3B7318292047B2CB007E8D80 /* LCLRegisterViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318282047B2CB007E8D80 /* LCLRegisterViewController1.m */; };
 		3B73182D2047C188007E8D80 /* LCLLoginViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73182C2047C188007E8D80 /* LCLLoginViewController1.m */; };
 		3B7318302047C194007E8D80 /* LCLLoginViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73182F2047C194007E8D80 /* LCLLoginViewController2.m */; };
 		3B7318332047C2E2007E8D80 /* LCLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7318322047C2E2007E8D80 /* LCLLoginViewController.m */; };
@@ -47,25 +47,30 @@
 		3B73196B20491CFC007E8D80 /* LCLTabBarBtnViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73196020491CFC007E8D80 /* LCLTabBarBtnViewController3.m */; };
 		3B73196C20491CFC007E8D80 /* LCLTabBarStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73196120491CFC007E8D80 /* LCLTabBarStyleViewController.m */; };
 		3B73196D20491CFC007E8D80 /* LCLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B73196220491CFC007E8D80 /* LCLDemoViewController.m */; };
+		3BB672A9204F718200C633EF /* LCLLoginViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB672A6204F718200C633EF /* LCLLoginViewController3.m */; };
+		3BB672AA204F718200C633EF /* LCLForgetPasswordViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB672A7204F718200C633EF /* LCLForgetPasswordViewController3.m */; };
+		3BB672AC204F72F900C633EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB672AB204F72F800C633EF /* Assets.xcassets */; };
+		3BB672AF204F817800C633EF /* LCLRLFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB672AE204F817800C633EF /* LCLRLFViewController.m */; };
+		3BB672B5204F84E200C633EF /* LCLForgetPasswordViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB672B4204F84E200C633EF /* LCLForgetPasswordViewController1.m */; };
+		3BB672B8204F888200C633EF /* LCLForgetPasswordViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB672B6204F888100C633EF /* LCLForgetPasswordViewController2.m */; };
 		3BBB94E920478C1200D008CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94E820478C1200D008CE /* AppDelegate.m */; };
 		3BBB94EC20478C1200D008CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94EB20478C1200D008CE /* ViewController.m */; };
 		3BBB94EF20478C1200D008CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB94ED20478C1200D008CE /* Main.storyboard */; };
-		3BBB94F120478C1200D008CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB94F020478C1200D008CE /* Assets.xcassets */; };
 		3BBB94F420478C1200D008CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB94F220478C1200D008CE /* LaunchScreen.storyboard */; };
 		3BBB94F720478C1200D008CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB94F620478C1200D008CE /* main.m */; };
-		3BBB95052047915100D008CE /* LCLRegisterViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB95032047915100D008CE /* LCLRegisterViewController1.m */; };
+		3BBB95052047915100D008CE /* LCLRegisterViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB95032047915100D008CE /* LCLRegisterViewController2.m */; };
 		3BBB9507204792DA00D008CE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB9506204792DA00D008CE /* Podfile */; };
 		3BBB9517204794EA00D008CE /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB9515204794EA00D008CE /* Resource.bundle */; };
 		3BBB9518204794EA00D008CE /* MBProgressHUD+Ali.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB9516204794EA00D008CE /* MBProgressHUD+Ali.m */; };
 		3BBB951B2047985800D008CE /* LCLAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB951A2047985800D008CE /* LCLAPI.m */; };
 		3BBB95222047A4D100D008CE /* LCLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB95212047A4D100D008CE /* LCLRegisterViewController.m */; };
-		3BBB95252047ACEC00D008CE /* CLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB95232047ACEC00D008CE /* CLTool.m */; };
+		3BBB95252047ACEC00D008CE /* LCLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB95232047ACEC00D008CE /* LCLTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23E9341EC873D846FB584902 /* libPods-ModularDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModularDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B7318272047B2CB007E8D80 /* LCLRegisterViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController2.h; sourceTree = "<group>"; };
-		3B7318282047B2CB007E8D80 /* LCLRegisterViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController2.m; sourceTree = "<group>"; };
+		3B7318272047B2CB007E8D80 /* LCLRegisterViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController1.h; sourceTree = "<group>"; };
+		3B7318282047B2CB007E8D80 /* LCLRegisterViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController1.m; sourceTree = "<group>"; };
 		3B73182B2047C188007E8D80 /* LCLLoginViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLLoginViewController1.h; sourceTree = "<group>"; };
 		3B73182C2047C188007E8D80 /* LCLLoginViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLLoginViewController1.m; sourceTree = "<group>"; };
 		3B73182E2047C194007E8D80 /* LCLLoginViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLLoginViewController2.h; sourceTree = "<group>"; };
@@ -142,19 +147,29 @@
 		3B73196120491CFC007E8D80 /* LCLTabBarStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTabBarStyleViewController.m; sourceTree = "<group>"; };
 		3B73196220491CFC007E8D80 /* LCLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLDemoViewController.m; sourceTree = "<group>"; };
 		3B73196320491CFC007E8D80 /* LCLTabBarStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTabBarStyleViewController.h; sourceTree = "<group>"; };
+		3BB672A5204F718200C633EF /* LCLForgetPasswordViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLForgetPasswordViewController3.h; sourceTree = "<group>"; };
+		3BB672A6204F718200C633EF /* LCLLoginViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLLoginViewController3.m; sourceTree = "<group>"; };
+		3BB672A7204F718200C633EF /* LCLForgetPasswordViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLForgetPasswordViewController3.m; sourceTree = "<group>"; };
+		3BB672A8204F718200C633EF /* LCLLoginViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLLoginViewController3.h; sourceTree = "<group>"; };
+		3BB672AB204F72F800C633EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ModularDemo/Assets.xcassets; sourceTree = "<group>"; };
+		3BB672AD204F817800C633EF /* LCLRLFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLRLFViewController.h; sourceTree = "<group>"; };
+		3BB672AE204F817800C633EF /* LCLRLFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLRLFViewController.m; sourceTree = "<group>"; };
+		3BB672B3204F84E100C633EF /* LCLForgetPasswordViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLForgetPasswordViewController1.h; sourceTree = "<group>"; };
+		3BB672B4204F84E200C633EF /* LCLForgetPasswordViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLForgetPasswordViewController1.m; sourceTree = "<group>"; };
+		3BB672B6204F888100C633EF /* LCLForgetPasswordViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLForgetPasswordViewController2.m; sourceTree = "<group>"; };
+		3BB672B7204F888100C633EF /* LCLForgetPasswordViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLForgetPasswordViewController2.h; sourceTree = "<group>"; };
 		3BBB94E420478C1200D008CE /* ModularDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBB94E720478C1200D008CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BBB94E820478C1200D008CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3BBB94EA20478C1200D008CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3BBB94EB20478C1200D008CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3BBB94EE20478C1200D008CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3BBB94F020478C1200D008CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BBB94F320478C1200D008CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BBB94F520478C1200D008CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BBB94F620478C1200D008CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BBB95022047911100D008CE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		3BBB95032047915100D008CE /* LCLRegisterViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController1.m; sourceTree = "<group>"; };
-		3BBB95042047915100D008CE /* LCLRegisterViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController1.h; sourceTree = "<group>"; };
+		3BBB95032047915100D008CE /* LCLRegisterViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController2.m; sourceTree = "<group>"; };
+		3BBB95042047915100D008CE /* LCLRegisterViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController2.h; sourceTree = "<group>"; };
 		3BBB9506204792DA00D008CE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3BBB9514204794EA00D008CE /* MBProgressHUD+Ali.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Ali.h"; sourceTree = "<group>"; };
 		3BBB9515204794EA00D008CE /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
@@ -163,7 +178,7 @@
 		3BBB951A2047985800D008CE /* LCLAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLAPI.m; sourceTree = "<group>"; };
 		3BBB95202047A4D100D008CE /* LCLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLRegisterViewController.h; sourceTree = "<group>"; };
 		3BBB95212047A4D100D008CE /* LCLRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLRegisterViewController.m; sourceTree = "<group>"; };
-		3BBB95232047ACEC00D008CE /* CLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTool.m; sourceTree = "<group>"; };
+		3BBB95232047ACEC00D008CE /* LCLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLTool.m; sourceTree = "<group>"; };
 		3BBB95242047ACEC00D008CE /* LCLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLTool.h; sourceTree = "<group>"; };
 		9BBEC45BBF6F8002E7DB42C7 /* Pods-ModularDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModularDemo/Pods-ModularDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DA8383C6E83956CD8CA8FFF5 /* Pods-ModularDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModularDemo/Pods-ModularDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,10 +209,6 @@
 			children = (
 				3B7318312047C2E2007E8D80 /* LCLLoginViewController.h */,
 				3B7318322047C2E2007E8D80 /* LCLLoginViewController.m */,
-				3B73182B2047C188007E8D80 /* LCLLoginViewController1.h */,
-				3B73182C2047C188007E8D80 /* LCLLoginViewController1.m */,
-				3B73182E2047C194007E8D80 /* LCLLoginViewController2.h */,
-				3B73182F2047C194007E8D80 /* LCLLoginViewController2.m */,
 			);
 			path = "登录页面";
 			sourceTree = "<group>";
@@ -384,15 +395,59 @@
 				3B7318372047D0C2007E8D80 /* GlobalSingleton.h */,
 				3B7318382047D0C2007E8D80 /* GlobalSingleton.m */,
 				3BBB95242047ACEC00D008CE /* LCLTool.h */,
-				3BBB95232047ACEC00D008CE /* CLTool.m */,
+				3BBB95232047ACEC00D008CE /* LCLTool.m */,
 			);
 			path = "单例";
+			sourceTree = "<group>";
+		};
+		3BB672A4204F718200C633EF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3BB672B0204F83CD00C633EF /* 注册_登录_忘记密码_1 */ = {
+			isa = PBXGroup;
+			children = (
+				3BB672B3204F84E100C633EF /* LCLForgetPasswordViewController1.h */,
+				3BB672B4204F84E200C633EF /* LCLForgetPasswordViewController1.m */,
+				3B73182B2047C188007E8D80 /* LCLLoginViewController1.h */,
+				3B73182C2047C188007E8D80 /* LCLLoginViewController1.m */,
+				3B7318272047B2CB007E8D80 /* LCLRegisterViewController1.h */,
+				3B7318282047B2CB007E8D80 /* LCLRegisterViewController1.m */,
+			);
+			path = "注册_登录_忘记密码_1";
+			sourceTree = "<group>";
+		};
+		3BB672B1204F841100C633EF /* 注册_登录_忘记密码_2 */ = {
+			isa = PBXGroup;
+			children = (
+				3B73182E2047C194007E8D80 /* LCLLoginViewController2.h */,
+				3B73182F2047C194007E8D80 /* LCLLoginViewController2.m */,
+				3BB672B7204F888100C633EF /* LCLForgetPasswordViewController2.h */,
+				3BB672B6204F888100C633EF /* LCLForgetPasswordViewController2.m */,
+				3BBB95042047915100D008CE /* LCLRegisterViewController2.h */,
+				3BBB95032047915100D008CE /* LCLRegisterViewController2.m */,
+			);
+			path = "注册_登录_忘记密码_2";
+			sourceTree = "<group>";
+		};
+		3BB672B2204F841800C633EF /* 注册_登录_忘记密码_3 */ = {
+			isa = PBXGroup;
+			children = (
+				3BB672A8204F718200C633EF /* LCLLoginViewController3.h */,
+				3BB672A6204F718200C633EF /* LCLLoginViewController3.m */,
+				3BB672A5204F718200C633EF /* LCLForgetPasswordViewController3.h */,
+				3BB672A7204F718200C633EF /* LCLForgetPasswordViewController3.m */,
+			);
+			path = "注册_登录_忘记密码_3";
 			sourceTree = "<group>";
 		};
 		3BBB94DB20478C1200D008CE = {
 			isa = PBXGroup;
 			children = (
-				3BBB94F020478C1200D008CE /* Assets.xcassets */,
+				3BB672AB204F72F800C633EF /* Assets.xcassets */,
 				3BBB95022047911100D008CE /* PrefixHeader.pch */,
 				3B7318D42047E76A007E8D80 /* HRColorPicker */,
 				3BBB94E620478C1200D008CE /* ModularDemo */,
@@ -442,8 +497,9 @@
 		3BBB951C20479B3900D008CE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3BB672A4204F718200C633EF /* Login */,
 				3BBB951D20479B5900D008CE /* 配置_工具文件 */,
-				3BBB951F2047A4BA00D008CE /* 注册页面 */,
+				3BBB951F2047A4BA00D008CE /* 注册_登录_忘记密码页面 */,
 				3B73182A2047C15E007E8D80 /* 登录页面 */,
 				3B73194920491CFC007E8D80 /* TabBar */,
 				3B7318FC2048EBFE007E8D80 /* 控件展示 */,
@@ -461,17 +517,18 @@
 			path = "配置_工具文件";
 			sourceTree = "<group>";
 		};
-		3BBB951F2047A4BA00D008CE /* 注册页面 */ = {
+		3BBB951F2047A4BA00D008CE /* 注册_登录_忘记密码页面 */ = {
 			isa = PBXGroup;
 			children = (
+				3BB672AD204F817800C633EF /* LCLRLFViewController.h */,
+				3BB672AE204F817800C633EF /* LCLRLFViewController.m */,
+				3BB672B2204F841800C633EF /* 注册_登录_忘记密码_3 */,
+				3BB672B1204F841100C633EF /* 注册_登录_忘记密码_2 */,
+				3BB672B0204F83CD00C633EF /* 注册_登录_忘记密码_1 */,
 				3BBB95202047A4D100D008CE /* LCLRegisterViewController.h */,
 				3BBB95212047A4D100D008CE /* LCLRegisterViewController.m */,
-				3BBB95042047915100D008CE /* LCLRegisterViewController1.h */,
-				3BBB95032047915100D008CE /* LCLRegisterViewController1.m */,
-				3B7318272047B2CB007E8D80 /* LCLRegisterViewController2.h */,
-				3B7318282047B2CB007E8D80 /* LCLRegisterViewController2.m */,
 			);
-			path = "注册页面";
+			path = "注册_登录_忘记密码页面";
 			sourceTree = "<group>";
 		};
 		87DC351569C39C9498B39E5E /* Pods */ = {
@@ -546,10 +603,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BBB94F420478C1200D008CE /* LaunchScreen.storyboard in Resources */,
-				3BBB94F120478C1200D008CE /* Assets.xcassets in Resources */,
 				3B7318EF2047E76A007E8D80 /* Info.plist in Resources */,
 				3BBB9507204792DA00D008CE /* Podfile in Resources */,
 				3BBB94EF20478C1200D008CE /* Main.storyboard in Resources */,
+				3BB672AC204F72F900C633EF /* Assets.xcassets in Resources */,
 				3BBB9517204794EA00D008CE /* Resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,7 +669,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BBB95252047ACEC00D008CE /* CLTool.m in Sources */,
+				3BBB95252047ACEC00D008CE /* LCLTool.m in Sources */,
 				3B73196D20491CFC007E8D80 /* LCLDemoViewController.m in Sources */,
 				3B731948204918A6007E8D80 /* CategoryCell.m in Sources */,
 				3BBB951B2047985800D008CE /* LCLAPI.m in Sources */,
@@ -624,13 +681,17 @@
 				3B7318332047C2E2007E8D80 /* LCLLoginViewController.m in Sources */,
 				3B73193F204912E7007E8D80 /* UIView+MJCClassExtension.m in Sources */,
 				3B73193C204912E7007E8D80 /* UIColor+MJCClassExtension.m in Sources */,
+				3BB672AA204F718200C633EF /* LCLForgetPasswordViewController3.m in Sources */,
 				3B7318EB2047E76A007E8D80 /* HRColorCursor.m in Sources */,
 				3B731943204912E7007E8D80 /* MJCChildMainView.m in Sources */,
 				3B73193D204912E7007E8D80 /* MJCCommonTools.m in Sources */,
 				3BBB94EC20478C1200D008CE /* ViewController.m in Sources */,
 				3B731944204912E7007E8D80 /* MJCSegmentInterface.m in Sources */,
 				3B73196720491CFC007E8D80 /* LCLTabBArViewController4.m in Sources */,
+				3BB672A9204F718200C633EF /* LCLLoginViewController3.m in Sources */,
+				3BB672AF204F817800C633EF /* LCLRLFViewController.m in Sources */,
 				3B7318EE2047E76A007E8D80 /* UIImage+CoreGraphics.m in Sources */,
+				3BB672B5204F84E200C633EF /* LCLForgetPasswordViewController1.m in Sources */,
 				3B7318302047C194007E8D80 /* LCLLoginViewController2.m in Sources */,
 				3B73196820491CFC007E8D80 /* LCLTabbarViewController3.m in Sources */,
 				3B73196520491CFC007E8D80 /* LCLTabbarViewController2.m in Sources */,
@@ -638,7 +699,8 @@
 				3BBB94F720478C1200D008CE /* main.m in Sources */,
 				3B7319042048EC7D007E8D80 /* LCLControlViewController2.m in Sources */,
 				3B731940204912E7007E8D80 /* MJCIndicatorView.m in Sources */,
-				3B7318292047B2CB007E8D80 /* LCLRegisterViewController2.m in Sources */,
+				3B7318292047B2CB007E8D80 /* LCLRegisterViewController1.m in Sources */,
+				3BB672B8204F888200C633EF /* LCLForgetPasswordViewController2.m in Sources */,
 				3BBB94E920478C1200D008CE /* AppDelegate.m in Sources */,
 				3B73193E204912E7007E8D80 /* UIButton+MJCClassExtension.m in Sources */,
 				3B7318E92047E76A007E8D80 /* HRBrightnessCursor.m in Sources */,
@@ -656,7 +718,7 @@
 				3B7318F72047FC24007E8D80 /* LCLBaseViewController.m in Sources */,
 				3B73182D2047C188007E8D80 /* LCLLoginViewController1.m in Sources */,
 				3B7318E82047E76A007E8D80 /* HRColorPickerView.m in Sources */,
-				3BBB95052047915100D008CE /* LCLRegisterViewController1.m in Sources */,
+				3BBB95052047915100D008CE /* LCLRegisterViewController2.m in Sources */,
 				3B73196620491CFC007E8D80 /* LCLTabBarViewController5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,13 +855,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DU5J57ERJ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ModularDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbweipai.ModularDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -809,13 +872,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DU5J57ERJ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ModularDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbweipai.ModularDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
